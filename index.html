@@ -3,328 +3,169 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>END Brand Navigator Mobile</title>
+<title>END Brand Navigator + Price Compare</title>
 <style>
-:root {
-  --bg:#f4f3ef; --panel:#ffffff; --text:#111111; --muted:#777777; --line:#dedad1;
-  --button:#111111; --buttonText:#ffffff; --chip:#f8f7f3; --hover:#111111; --hoverText:#ffffff;
-}
-body.dark {
-  --bg:#111111; --panel:#1b1b1b; --text:#f3f1ea; --muted:#aaa; --line:#383838;
-  --button:#f3f1ea; --buttonText:#111; --chip:#242424; --hover:#f3f1ea; --hoverText:#111;
-}
-* { box-sizing:border-box; }
-html { -webkit-text-size-adjust:100%; }
-body {
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
-}
-.wrap {
-  max-width:640px;
-  margin:0 auto;
-  padding:16px 14px 92px;
-}
-.header {
-  border-bottom:1px solid var(--line);
-  padding-bottom:14px;
-  margin-bottom:14px;
-}
-h1 {
-  margin:0;
-  font-size:24px;
-  letter-spacing:.01em;
-}
-.sub {
-  margin-top:7px;
-  color:var(--muted);
-  font-size:12px;
-  line-height:1.65;
-}
-.tools {
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:var(--bg);
-  padding:10px 0 12px;
-  display:grid;
-  grid-template-columns:1fr 74px 64px;
-  gap:8px;
-  border-bottom:1px solid var(--line);
-  margin-bottom:10px;
-}
-input {
-  width:100%;
-  min-height:46px;
-  padding:12px 13px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--panel);
-  color:var(--text);
-  font-size:16px;
-}
-button {
-  min-height:46px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:10px 10px;
-  background:var(--panel);
-  color:var(--text);
-  cursor:pointer;
-  font-size:12px;
-}
-button.active, button:hover {
-  background:var(--button);
-  color:var(--buttonText);
-}
-.filters {
-  display:flex;
-  gap:8px;
-  overflow-x:auto;
-  padding:4px 0 8px;
-  margin:0 -2px 6px;
-  -webkit-overflow-scrolling:touch;
-}
-.filters::-webkit-scrollbar { display:none; }
-.chip {
-  flex:0 0 auto;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:38px;
-  padding:9px 12px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  background:var(--chip);
-  color:var(--text);
-  cursor:pointer;
-  font-size:12px;
-  white-space:nowrap;
-}
-.chip.active {
-  background:var(--button);
-  color:var(--buttonText);
-}
-.grid {
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
-  align-items:start;
-}
-.category {
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:14px;
-}
-h2 {
-  margin:0 0 12px;
-  font-size:17px;
-  line-height:1.35;
-  border-bottom:1px solid var(--line);
-  padding-bottom:10px;
-}
-.country-block {
-  margin-bottom:17px;
-}
-h3 {
-  margin:0 0 8px;
-  font-size:12px;
-  color:var(--muted);
-  letter-spacing:.08em;
-}
-.brand-list {
-  display:grid;
-  gap:8px;
-}
-.brand {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  min-height:48px;
-  padding:12px 12px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--chip);
-  color:var(--text);
-  text-decoration:none;
-  -webkit-tap-highlight-color:transparent;
-}
-.brand:active {
-  transform:scale(.99);
-}
-.brand-name {
-  font-size:15px;
-  line-height:1.25;
-  font-weight:650;
-}
-.meta {
-  display:flex;
-  align-items:center;
-  gap:5px;
-  white-space:nowrap;
-}
-.country {
-  font-size:10px;
-  color:var(--muted);
-}
-.kind {
-  font-size:10px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:2px 6px;
-  color:var(--muted);
-}
-.empty {
-  display:none;
-  text-align:center;
-  padding:34px 16px;
-  color:var(--muted);
-  border:1px dashed var(--line);
-  border-radius:14px;
-}
-.footer {
-  margin-top:14px;
-  color:var(--muted);
-  font-size:11px;
-  line-height:1.7;
-}
-@media (min-width:760px) {
-  .wrap { max-width:900px; }
-  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-}
+body{margin:0;background:#f4f3ef;color:#111;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;}
+.wrap{max-width:760px;margin:0 auto;padding:18px 14px 56px;}
+header{border-bottom:1px solid #d8d4ca;padding-bottom:14px;margin-bottom:18px;}
+h1{font-size:26px;margin:0 0 6px;}
+p{margin:0;color:#666;font-size:13px;line-height:1.6;}
+section{background:#fff;border:1px solid #dedad1;border-radius:16px;padding:16px;margin-bottom:16px;}
+h2{font-size:18px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid #eee9df;line-height:1.35;}
+h3{font-size:12px;color:#777;margin:0 0 8px;letter-spacing:.08em;}
+.compare-head{display:grid;gap:10px;margin-bottom:14px;}
+.product-input{width:100%;font-size:16px;padding:12px;border:1px solid #e0ddd4;border-radius:12px;background:#fafafa;}
+.shop-row{display:grid;grid-template-columns:1fr;gap:8px;padding:12px;border:1px solid #eee9df;border-radius:14px;background:#fbfaf7;margin-bottom:10px;}
+.shop-name{font-weight:750;font-size:16px;}
+.shop-row label{font-size:11px;color:#777;display:grid;gap:4px;}
+.shop-row input[type="text"], .shop-row input:not([type]){width:100%;}
+.shop-row input.price,.shop-row input.shipping,.shop-row input.tax{font-size:16px;padding:10px;border:1px solid #dedad1;border-radius:10px;background:#fff;}
+.check{display:flex!important;align-items:center;gap:8px;}
+.check input{width:18px;height:18px;}
+.total{font-size:20px;font-weight:800;text-align:right;padding-top:4px;}
+.best{border-color:#111;background:#f0efe9;}
+.best .total::before{content:"最安 ";font-size:11px;color:#fff;background:#111;border-radius:999px;padding:3px 7px;margin-right:6px;vertical-align:middle;}
+.actions{display:flex;gap:8px;margin-top:10px;}
+button{flex:1;border:1px solid #111;background:#111;color:#fff;border-radius:12px;padding:12px;font-size:13px;}
+button.secondary{background:#fff;color:#111;}
+.country{margin-bottom:18px;}
+.list{display:grid;gap:8px;}
+.brand{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:50px;padding:12px;border:1px solid #e8e4db;border-radius:12px;background:#fafafa;color:#111;text-decoration:none;}
+.brand:active{transform:scale(.99);}
+.name{font-size:15px;font-weight:650;line-height:1.25;}
+.meta{display:flex;gap:6px;align-items:center;white-space:nowrap;color:#777;font-size:10px;}
+.meta em{font-style:normal;border:1px solid #ddd;border-radius:999px;padding:2px 6px;}
+footer{color:#777;font-size:11px;line-height:1.6;margin-top:14px;}
+@media(min-width:760px){.shop-row{grid-template-columns:120px repeat(3,1fr) 104px 105px;align-items:end;}.shop-name{padding-bottom:10px;}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="header">
-    <div>
-      <h1>END Brand Navigator<br><span style="font-size:14px;color:var(--muted);font-weight:500;">Mobile</span></h1>
-      <div class="sub">ストリート / きれいめ（Maison Margiela寄り） / 靴・バッグ・小物。国順で表示。ブランドページがないものは検索結果へ。</div>
+<header>
+<h1>Brand Navigator<br>+ Price Compare</h1>
+<p>同じ商品の価格比較を手入力で計算。国ごとのブランドリストは下にキープ。</p>
+</header>
+
+<section>
+  <h2>送料＋税 比較</h2>
+  <div class="compare-head">
+    <input id="product" class="product-input" placeholder="商品名メモ：Maison Margiela Replica Sneaker など">
+    <p>商品価格・送料・税/関税を入力。税込/関税込にチェックすると税/関税は0扱いになります。</p>
+  </div>
+  <div id="shops">
+    
+    <div class="shop-row" data-shop="YOOX">
+      <div class="shop-name">YOOX</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
     </div>
-    <div class="sub">スマホで開いてホーム画面に追加 / リンクは同じタブ</div>
+    
+    <div class="shop-row" data-shop="END">
+      <div class="shop-name">END</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
+    <div class="shop-row" data-shop="SSENSE">
+      <div class="shop-name">SSENSE</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
+    <div class="shop-row" data-shop="FARFETCH">
+      <div class="shop-name">FARFETCH</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
+    <div class="shop-row" data-shop="GILT">
+      <div class="shop-name">GILT</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
+    <div class="shop-row" data-shop="MR PORTER">
+      <div class="shop-name">MR PORTER</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
+    <div class="shop-row" data-shop="HBX">
+      <div class="shop-name">HBX</div>
+      <label>商品価格<input inputmode="numeric" class="price" placeholder="0"></label>
+      <label>送料<input inputmode="numeric" class="shipping" placeholder="0"></label>
+      <label>税/関税<input inputmode="numeric" class="tax" placeholder="0"></label>
+      <label class="check"><input type="checkbox" class="included"> 税込/関税込</label>
+      <div class="total">¥0</div>
+    </div>
+    
   </div>
-
-  <div class="tools">
-    <input id="search" placeholder="ブランド検索：例 Wax / Margiela / SPZL">
-    <button id="allBtn" class="active">すべて表示</button>
-    <button id="themeBtn">Dark</button>
+  <div class="actions">
+    <button type="button" onclick="calc()">再計算</button>
+    <button type="button" class="secondary" onclick="clearAll()">クリア</button>
   </div>
+</section>
 
-  <div class="filters" id="categoryFilters"></div>
-  <div class="filters" id="countryFilters"></div>
+<section class="brand-section"><h2>Street / ストリート</h2><div class="country"><h3>イギリス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/about-blank"><span class="name">about:blank</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/aries"><span class="name">Aries</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/barbour"><span class="name">Barbour</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/cole-buxton"><span class="name">Cole Buxton</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/dr-martens"><span class="name">Dr. Martens</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/fred-perry"><span class="name">Fred Perry</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/maharishi"><span class="name">Maharishi</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/represent"><span class="name">Represent</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/represent-247"><span class="name">Represent 247</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a></div></div><div class="country"><h3>ドイツ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/adidas"><span class="name">adidas</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl"><span class="name">adidas SPZL 🔍</span><span class="meta"><span>ドイツ</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/puma"><span class="name">Puma</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a></div></div><div class="country"><h3>フランス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/salomon"><span class="name">Salomon</span><span class="meta"><span>フランス</span><em>Brand</em></span></a></div></div><div class="country"><h3>アメリカ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/brain-dead"><span class="name">Brain Dead</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/carhartt"><span class="name">Carhartt WIP</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/dickies"><span class="name">Dickies</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/fear-of-god-essentials"><span class="name">Fear of God ESSENTIALS</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/levi-s"><span class="name">Levi&#x27;s</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/nike"><span class="name">Nike</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/oakley"><span class="name">Oakley</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/pleasures"><span class="name">PLEASURES</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/red-wing"><span class="name">Red Wing</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/stussy"><span class="name">Stussy</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/the-north-face"><span class="name">The North Face</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/vans"><span class="name">Vans</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a></div></div><div class="country"><h3>日本</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=a%20bathing%20ape"><span class="name">A Bathing Ape 🔍</span><span class="meta"><span>日本</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/and-wander"><span class="name">and wander</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/asics"><span class="name">Asics</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/neighborhood"><span class="name">Neighborhood</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/needles"><span class="name">Needles</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/wtaps"><span class="name">WTAPS</span><span class="meta"><span>日本</span><em>Brand</em></span></a></div></div><div class="country"><h3>韓国</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=andersson%20bell"><span class="name">Andersson Bell 🔍</span><span class="meta"><span>韓国</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/thisisneverthat"><span class="name">thisisneverthat</span><span class="meta"><span>韓国</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=ader%20error"><span class="name">ADER Error 🔍</span><span class="meta"><span>韓国</span><em>検索</em></span></a></div></div><div class="country"><h3>その他ヨーロッパ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/cp-company"><span class="name">C.P. Company</span><span class="meta"><span>イタリア</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/diemme"><span class="name">Diemme</span><span class="meta"><span>イタリア</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/stone-island"><span class="name">Stone Island</span><span class="meta"><span>イタリア</span><em>Brand</em></span></a></div></div></section><section class="brand-section"><h2>Clean &amp; Mode / きれいめ（Margiela寄り）</h2><div class="country"><h3>イギリス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/burberry"><span class="name">Burberry</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/clarks-originals"><span class="name">Clarks Originals</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/folk"><span class="name">Folk</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/grenson"><span class="name">Grenson</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/paul-smith"><span class="name">Paul Smith</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/universal-works"><span class="name">Universal Works</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/wax-london"><span class="name">Wax London</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/ymc"><span class="name">YMC</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a></div></div><div class="country"><h3>ドイツ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/birkenstock"><span class="name">Birkenstock</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a></div></div><div class="country"><h3>フランス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/a-p-c"><span class="name">A.P.C.</span><span class="meta"><span>フランス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/ami-paris"><span class="name">AMI Paris</span><span class="meta"><span>フランス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/maison-margiela"><span class="name">Maison Margiela</span><span class="meta"><span>フランス</span><em>Brand</em></span></a></div></div><div class="country"><h3>アメリカ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/new-balance"><span class="name">New Balance</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/polo-ralph-lauren"><span class="name">Polo Ralph Lauren</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a></div></div><div class="country"><h3>日本</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/auralee"><span class="name">Auralee</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/beams-plus"><span class="name">Beams Plus</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20homme"><span class="name">Comme des Garcons Homme 🔍</span><span class="meta"><span>日本</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20play"><span class="name">Comme des Garcons Play 🔍</span><span class="meta"><span>日本</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20shirt"><span class="name">Comme des Garcons Shirt 🔍</span><span class="meta"><span>日本</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/human-made"><span class="name">Human Made</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/nanamica"><span class="name">nanamica</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/porter"><span class="name">Porter-Yoshida &amp; Co.</span><span class="meta"><span>日本</span><em>Brand</em></span></a></div></div><div class="country"><h3>韓国</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=andersson%20bell"><span class="name">Andersson Bell 🔍</span><span class="meta"><span>韓国</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=ader%20error"><span class="name">ADER Error 🔍</span><span class="meta"><span>韓国</span><em>検索</em></span></a></div></div><div class="country"><h3>その他ヨーロッパ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/acne-studios"><span class="name">Acne Studios</span><span class="meta"><span>スウェーデン</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/our-legacy"><span class="name">Our Legacy</span><span class="meta"><span>スウェーデン</span><em>Brand</em></span></a></div></div><div class="country"><h3>その他ヨーロッパ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/norse-projects"><span class="name">Norse Projects</span><span class="meta"><span>デンマーク</span><em>Brand</em></span></a></div></div></section><section class="brand-section"><h2>Footwear &amp; Accessories / 靴・バッグ・小物</h2><div class="country"><h3>イギリス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/clarks-originals"><span class="name">Clarks Originals</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/dr-martens"><span class="name">Dr. Martens</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/grenson"><span class="name">Grenson</span><span class="meta"><span>イギリス</span><em>Brand</em></span></a></div></div><div class="country"><h3>ドイツ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/adidas"><span class="name">adidas</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl"><span class="name">adidas SPZL 🔍</span><span class="meta"><span>ドイツ</span><em>検索</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/birkenstock"><span class="name">Birkenstock</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/puma"><span class="name">Puma</span><span class="meta"><span>ドイツ</span><em>Brand</em></span></a></div></div><div class="country"><h3>フランス</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/salomon"><span class="name">Salomon</span><span class="meta"><span>フランス</span><em>Brand</em></span></a></div></div><div class="country"><h3>アメリカ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/new-balance"><span class="name">New Balance</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/nike"><span class="name">Nike</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/oakley"><span class="name">Oakley</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/red-wing"><span class="name">Red Wing</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/vans"><span class="name">Vans</span><span class="meta"><span>アメリカ</span><em>Brand</em></span></a></div></div><div class="country"><h3>日本</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/asics"><span class="name">Asics</span><span class="meta"><span>日本</span><em>Brand</em></span></a><a class="brand" href="https://www.endclothing.com/jp/brands/porter"><span class="name">Porter-Yoshida &amp; Co.</span><span class="meta"><span>日本</span><em>Brand</em></span></a></div></div><div class="country"><h3>韓国</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/catalogsearch/results?q=andersson%20bell"><span class="name">Andersson Bell 🔍</span><span class="meta"><span>韓国</span><em>検索</em></span></a></div></div><div class="country"><h3>その他ヨーロッパ</h3><div class="list"><a class="brand" href="https://www.endclothing.com/jp/brands/diemme"><span class="name">Diemme</span><span class="meta"><span>イタリア</span><em>Brand</em></span></a></div></div></section>
 
-  <main class="grid" id="grid"></main>
-  <div class="empty" id="empty">該当ブランドがありません。</div>
-
-  <div class="footer">
-    Source: uploaded END. brands HTML. adidas SPZL is linked to END catalog search:
-    https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl
-  </div>
+<footer>adidas SPZLと一部韓国ブランドはEND検索結果へリンク。比較価格は手入力計算です。</footer>
 </div>
 
 <script>
-const brands = [{"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "about:blank", "href": "https://www.endclothing.com/jp/brands/about-blank", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Aries", "href": "https://www.endclothing.com/jp/brands/aries", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Barbour", "href": "https://www.endclothing.com/jp/brands/barbour", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Cole Buxton", "href": "https://www.endclothing.com/jp/brands/cole-buxton", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Dr. Martens", "href": "https://www.endclothing.com/jp/brands/dr-martens", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Fred Perry", "href": "https://www.endclothing.com/jp/brands/fred-perry", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Maharishi", "href": "https://www.endclothing.com/jp/brands/maharishi", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Represent", "href": "https://www.endclothing.com/jp/brands/represent", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Represent 247", "href": "https://www.endclothing.com/jp/brands/represent-247", "kind": "brand"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas", "href": "https://www.endclothing.com/jp/brands/adidas", "kind": "brand"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas SPZL", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl", "kind": "search"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Puma", "href": "https://www.endclothing.com/jp/brands/puma", "kind": "brand"}, {"category": "Street", "countryGroup": "フランス", "country": "フランス", "name": "Salomon", "href": "https://www.endclothing.com/jp/brands/salomon", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Brain Dead", "href": "https://www.endclothing.com/jp/brands/brain-dead", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Carhartt WIP", "href": "https://www.endclothing.com/jp/brands/carhartt", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Dickies", "href": "https://www.endclothing.com/jp/brands/dickies", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Fear of God ESSENTIALS", "href": "https://www.endclothing.com/jp/brands/fear-of-god-essentials", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Levi's", "href": "https://www.endclothing.com/jp/brands/levi-s", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Nike", "href": "https://www.endclothing.com/jp/brands/nike", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Oakley", "href": "https://www.endclothing.com/jp/brands/oakley", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "PLEASURES", "href": "https://www.endclothing.com/jp/brands/pleasures", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Red Wing", "href": "https://www.endclothing.com/jp/brands/red-wing", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Stussy", "href": "https://www.endclothing.com/jp/brands/stussy", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "The North Face", "href": "https://www.endclothing.com/jp/brands/the-north-face", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Vans", "href": "https://www.endclothing.com/jp/brands/vans", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "A Bathing Ape", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=a%20bathing%20ape", "kind": "search"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "and wander", "href": "https://www.endclothing.com/jp/brands/and-wander", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Asics", "href": "https://www.endclothing.com/jp/brands/asics", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Neighborhood", "href": "https://www.endclothing.com/jp/brands/neighborhood", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Needles", "href": "https://www.endclothing.com/jp/brands/needles", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "WTAPS", "href": "https://www.endclothing.com/jp/brands/wtaps", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "C.P. Company", "href": "https://www.endclothing.com/jp/brands/cp-company", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Diemme", "href": "https://www.endclothing.com/jp/brands/diemme", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Stone Island", "href": "https://www.endclothing.com/jp/brands/stone-island", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Burberry", "href": "https://www.endclothing.com/jp/brands/burberry", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Clarks Originals", "href": "https://www.endclothing.com/jp/brands/clarks-originals", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Folk", "href": "https://www.endclothing.com/jp/brands/folk", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Grenson", "href": "https://www.endclothing.com/jp/brands/grenson", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Paul Smith", "href": "https://www.endclothing.com/jp/brands/paul-smith", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Universal Works", "href": "https://www.endclothing.com/jp/brands/universal-works", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Wax London", "href": "https://www.endclothing.com/jp/brands/wax-london", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "YMC", "href": "https://www.endclothing.com/jp/brands/ymc", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Birkenstock", "href": "https://www.endclothing.com/jp/brands/birkenstock", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "A.P.C.", "href": "https://www.endclothing.com/jp/brands/a-p-c", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "AMI Paris", "href": "https://www.endclothing.com/jp/brands/ami-paris", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "Maison Margiela", "href": "https://www.endclothing.com/jp/brands/maison-margiela", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "アメリカ", "country": "アメリカ", "name": "New Balance", "href": "https://www.endclothing.com/jp/brands/new-balance", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Polo Ralph Lauren", "href": "https://www.endclothing.com/jp/brands/polo-ralph-lauren", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Auralee", "href": "https://www.endclothing.com/jp/brands/auralee", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Beams Plus", "href": "https://www.endclothing.com/jp/brands/beams-plus", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Homme", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20homme", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Play", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20play", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Shirt", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20shirt", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Human Made", "href": "https://www.endclothing.com/jp/brands/human-made", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "nanamica", "href": "https://www.endclothing.com/jp/brands/nanamica", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Porter-Yoshida & Co.", "href": "https://www.endclothing.com/jp/brands/porter", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "スウェーデン", "name": "Acne Studios", "href": "https://www.endclothing.com/jp/brands/acne-studios", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "スウェーデン", "name": "Our Legacy", "href": "https://www.endclothing.com/jp/brands/our-legacy", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "デンマーク", "name": "Norse Projects", "href": "https://www.endclothing.com/jp/brands/norse-projects", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Clarks Originals", "href": "https://www.endclothing.com/jp/brands/clarks-originals", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Dr. Martens", "href": "https://www.endclothing.com/jp/brands/dr-martens", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Grenson", "href": "https://www.endclothing.com/jp/brands/grenson", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas", "href": "https://www.endclothing.com/jp/brands/adidas", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas SPZL", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl", "kind": "search"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Birkenstock", "href": "https://www.endclothing.com/jp/brands/birkenstock", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Puma", "href": "https://www.endclothing.com/jp/brands/puma", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "フランス", "country": "フランス", "name": "Salomon", "href": "https://www.endclothing.com/jp/brands/salomon", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "New Balance", "href": "https://www.endclothing.com/jp/brands/new-balance", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Nike", "href": "https://www.endclothing.com/jp/brands/nike", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Oakley", "href": "https://www.endclothing.com/jp/brands/oakley", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Red Wing", "href": "https://www.endclothing.com/jp/brands/red-wing", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Vans", "href": "https://www.endclothing.com/jp/brands/vans", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "日本", "country": "日本", "name": "Asics", "href": "https://www.endclothing.com/jp/brands/asics", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "日本", "country": "日本", "name": "Porter-Yoshida & Co.", "href": "https://www.endclothing.com/jp/brands/porter", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Diemme", "href": "https://www.endclothing.com/jp/brands/diemme", "kind": "brand"}];
-const categoryOrder = ["Street", "Clean & Mode", "Footwear & Accessories"];
-const countryOrder = ["イギリス", "ドイツ", "フランス", "アメリカ", "日本", "その他ヨーロッパ"];
-let selectedCategory = "all";
-let selectedCountry = "all";
-
-const labels = {
-  "Street":"Street / ストリート",
-  "Clean & Mode":"Clean & Mode / きれいめ",
-  "Footwear & Accessories":"Footwear & Accessories / 靴・バッグ・小物"
-};
-
-function uniq(arr) { return [...new Set(arr)]; }
-
-function renderFilters() {
-  const cf = document.getElementById("categoryFilters");
-  cf.innerHTML = "";
-  [["all","すべてのカテゴリ"], ...categoryOrder.map(c=>[c, labels[c]])].forEach(([val, lab]) => {
-    const el = document.createElement("button");
-    el.className = "chip" + (selectedCategory === val ? " active" : "");
-    el.textContent = lab;
-    el.onclick = () => { selectedCategory = val; render(); };
-    cf.appendChild(el);
+function yen(n) {
+  if (!isFinite(n) || n <= 0) return "¥0";
+  return "¥" + Math.round(n).toLocaleString("ja-JP");
+}
+function num(v) {
+  if (!v) return 0;
+  return Number(String(v).replace(/[¥,\s]/g,"")) || 0;
+}
+function calc() {
+  const rows = [...document.querySelectorAll(".shop-row")];
+  let best = Infinity;
+  rows.forEach(r => {
+    const price = num(r.querySelector(".price").value);
+    const shipping = num(r.querySelector(".shipping").value);
+    const included = r.querySelector(".included").checked;
+    const tax = included ? 0 : num(r.querySelector(".tax").value);
+    const total = price + shipping + tax;
+    r.dataset.total = total;
+    r.querySelector(".total").textContent = yen(total);
+    r.classList.remove("best");
+    if (total > 0 && total < best) best = total;
   });
-
-  const yf = document.getElementById("countryFilters");
-  yf.innerHTML = "";
-  [["all","すべての国"], ...countryOrder.map(c=>[c,c])].forEach(([val, lab]) => {
-    const el = document.createElement("button");
-    el.className = "chip" + (selectedCountry === val ? " active" : "");
-    el.textContent = lab;
-    el.onclick = () => { selectedCountry = val; render(); };
-    yf.appendChild(el);
+  rows.forEach(r => {
+    if (Number(r.dataset.total) === best) r.classList.add("best");
   });
 }
-
-function visibleBrands() {
-  const q = document.getElementById("search").value.trim().toLowerCase();
-  return brands.filter(b => {
-    const matchQ = !q || [b.name,b.category,b.country,b.countryGroup].join(" ").toLowerCase().includes(q);
-    const matchCat = selectedCategory === "all" || b.category === selectedCategory;
-    const matchCountry = selectedCountry === "all" || b.countryGroup === selectedCountry;
-    return matchQ && matchCat && matchCountry;
+function clearAll() {
+  document.querySelectorAll("input").forEach(i => {
+    if (i.type === "checkbox") i.checked = false;
+    else i.value = "";
   });
+  calc();
 }
-
-function render() {
-  renderFilters();
-  const grid = document.getElementById("grid");
-  const empty = document.getElementById("empty");
-  const list = visibleBrands();
-  grid.innerHTML = "";
-
-  categoryOrder.forEach(cat => {
-    if (selectedCategory !== "all" && selectedCategory !== cat) return;
-    const catItems = list.filter(b => b.category === cat);
-    if (!catItems.length) return;
-
-    const section = document.createElement("section");
-    section.className = "category";
-    section.innerHTML = `<h2>${labels[cat]}</h2>`;
-
-    countryOrder.forEach(countryGroup => {
-      const countryItems = catItems.filter(b => b.countryGroup === countryGroup);
-      if (!countryItems.length) return;
-
-      const block = document.createElement("div");
-      block.className = "country-block";
-      block.innerHTML = `<h3>${countryGroup}</h3><div class="brand-list"></div>`;
-      const listEl = block.querySelector(".brand-list");
-
-      countryItems.sort((a,b)=>a.name.localeCompare(b.name)).forEach(b => {
-        const a = document.createElement("a");
-        a.className = "brand";
-        a.href = b.href;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        const kind = b.kind === "search" ? "検索" : "Brand";
-        a.innerHTML = `<span class="brand-name">${b.name}${b.kind==="search" ? " 🔍" : ""}</span><span class="meta"><span class="country">${b.country}</span><span class="kind">${kind}</span></span>`;
-        listEl.appendChild(a);
-      });
-      section.appendChild(block);
-    });
-    grid.appendChild(section);
-  });
-
-  empty.style.display = grid.children.length ? "none" : "block";
-  document.getElementById("allBtn").classList.toggle("active", selectedCategory === "all" && selectedCountry === "all" && !document.getElementById("search").value);
-}
-
-document.getElementById("search").addEventListener("input", render);
-document.getElementById("allBtn").onclick = () => {
-  selectedCategory = "all"; selectedCountry = "all"; document.getElementById("search").value = ""; render();
-};
-document.getElementById("themeBtn").onclick = () => {
-  document.body.classList.toggle("dark");
-  document.getElementById("themeBtn").textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
-};
-render();
+document.querySelectorAll(".price,.shipping,.tax,.included").forEach(el => el.addEventListener("input", calc));
+document.querySelectorAll(".included").forEach(el => el.addEventListener("change", calc));
+calc();
 </script>
 </body>
 </html>
