@@ -94,6 +94,58 @@ document.getElementById("productSearch").addEventListener("keydown", (e) => {
   }
 });
 
+
+const COMPARE_SETTINGS_KEY = "fdb_v9_compare_settings";
+
+function defaultCompareSettings() {
+  return {
+    END: { ship: 2500, tax: 0, coupon: 0 },
+    SSENSE: { ship: 3500, tax: 0, coupon: 0 },
+    FARFETCH: { ship: 0, tax: 0, coupon: 0 },
+    YOOX: { ship: 2500, tax: 0, coupon: 0 },
+    HBX: { ship: 3000, tax: 0, coupon: 0 }
+  };
+}
+
+function loadCompareSettings() {
+  try {
+    return { ...defaultCompareSettings(), ...(JSON.parse(localStorage.getItem(COMPARE_SETTINGS_KEY)) || {}) };
+  } catch (e) {
+    return defaultCompareSettings();
+  }
+}
+
+function saveCompareSettings() {
+  const data = defaultCompareSettings();
+  document.querySelectorAll(".compareSettingRow").forEach((row) => {
+    const shop = row.dataset.shop;
+    data[shop] = {
+      ship: num(row.querySelector(".ship").value),
+      tax: num(row.querySelector(".tax").value),
+      coupon: num(row.querySelector(".coupon").value)
+    };
+  });
+  localStorage.setItem(COMPARE_SETTINGS_KEY, JSON.stringify(data));
+}
+
+function renderCompareProductLinks() {
+  const input = document.getElementById("compareMemo");
+  const wrap = document.getElementById("compareProductLinks");
+  if (!input || !wrap) return;
+
+  const q = input.value;
+  wrap.innerHTML = "";
+
+  SHOP_ORDER.forEach((shop) => {
+    const a = document.createElement("a");
+    a.className = "searchLink";
+    a.textContent = shop;
+    a.href = productUrl(shop, q);
+    a.target = "_blank";
+    wrap.appendChild(a);
+  });
+}
+
 function yen(value) {
   if (!isFinite(value) || value <= 0) return "¥0";
   return "¥" + Math.round(value).toLocaleString("ja-JP");
@@ -104,67 +156,146 @@ function num(value) {
 }
 
 function buildPriceGrid() {
+  const panel = document.getElementById("viewCompare").querySelector(".panel");
+  panel.innerHTML = `
+    <div class="sectionTitle">Price Compare</div>
+
+    <div class="compareV9Intro">
+      <input id="compareMemo" placeholder="Product: Maison Margiela Replica">
+      <div class="compareLinks" id="compareProductLinks"></div>
+      <p class="note">Search links update from the product name. Then enter prices only.</p>
+    </div>
+
+    <div class="bestSummary" id="bestSummary"></div>
+
+    <div class="compareTable" id="priceGrid"></div>
+
+    <details class="compareSettings">
+      <summary>Shipping / Duty / Coupon Settings</summary>
+      <div class="compareSettingGrid" id="compareSettingGrid"></div>
+      <p class="note">These values are saved locally. Usually you only change item prices.</p>
+    </details>
+
+    <div class="compareActions">
+      <button id="calcPrices" class="primary">Calculate</button>
+      <button id="clearPrices">Clear Prices</button>
+      <button id="resetCompareSettings">Reset Settings</button>
+    </div>
+
+    <p class="note">Total = Price + Shipping + Duty / Tax - Coupon.</p>
+  `;
+
   const grid = document.getElementById("priceGrid");
-  grid.innerHTML = "";
+  const settingsGrid = document.getElementById("compareSettingGrid");
+  const saved = loadCompareSettings();
 
   SHOP_ORDER.forEach((shop) => {
     const row = document.createElement("div");
-    row.className = "priceRow";
+    row.className = "compareRowV9";
     row.dataset.shop = shop;
     row.innerHTML = `
-      <div class="shopName">${shop}</div>
-      <div class="priceFields">
-        <input class="price" inputmode="numeric" placeholder="Price">
-        <input class="ship" inputmode="numeric" placeholder="Shipping">
-        <input class="tax" inputmode="numeric" placeholder="Duty / Tax">
-        <input class="coupon" inputmode="numeric" placeholder="Coupon">
-      </div>
-      <div class="totalsBox">
-        <div class="total">¥0</div>
-        <div class="diff"></div>
+      <div class="compareShop">${shop}</div>
+      <input class="comparePriceInput price" inputmode="numeric" placeholder="Price">
+      <div class="compareTotalBox">
+        <div class="compareTotal">¥0</div>
+        <div class="compareBreakdown"></div>
       </div>
     `;
     grid.appendChild(row);
+
+    const setting = document.createElement("div");
+    setting.className = "compareSettingRow";
+    setting.dataset.shop = shop;
+    setting.innerHTML = `
+      <label>${shop}</label>
+      <input class="ship" inputmode="numeric" placeholder="Shipping" value="${saved[shop].ship}">
+      <input class="tax" inputmode="numeric" placeholder="Duty / Tax" value="${saved[shop].tax}">
+      <input class="coupon" inputmode="numeric" placeholder="Coupon" value="${saved[shop].coupon}">
+    `;
+    settingsGrid.appendChild(setting);
   });
 
-  document.querySelectorAll(".priceRow input").forEach((input) => {
+  document.querySelectorAll(".comparePriceInput").forEach((input, index, all) => {
     input.addEventListener("input", calcPrices);
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === "Tab") {
+        if (event.key === "Enter") event.preventDefault();
+        const next = all[index + 1];
+        if (next) next.focus();
+        else calcPrices();
+      }
+    });
   });
+
+  document.querySelectorAll(".compareSettingRow input").forEach((input) => {
+    input.addEventListener("input", () => {
+      saveCompareSettings();
+      calcPrices();
+    });
+  });
+
+  document.getElementById("compareMemo").addEventListener("input", renderCompareProductLinks);
+  document.getElementById("compareMemo").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      const first = document.querySelector("#compareProductLinks a");
+      if (first && first.href !== "#") window.open(first.href, "_blank");
+    }
+  });
+
+  document.getElementById("calcPrices").onclick = calcPrices;
+  document.getElementById("clearPrices").onclick = () => {
+    document.querySelectorAll(".comparePriceInput").forEach((input) => {
+      input.value = "";
+    });
+    calcPrices();
+    const first = document.querySelector(".comparePriceInput");
+    if (first) first.focus();
+  };
+  document.getElementById("resetCompareSettings").onclick = () => {
+    localStorage.removeItem(COMPARE_SETTINGS_KEY);
+    buildPriceGrid();
+    calcPrices();
+  };
+
+  renderCompareProductLinks();
+  calcPrices();
 }
 
 function calcPrices() {
   let best = Infinity;
   let bestShop = "";
-  const rows = [...document.querySelectorAll(".priceRow")];
+  const rows = [...document.querySelectorAll(".compareRowV9")];
 
   rows.forEach((row) => {
-    const total =
-      num(row.querySelector(".price").value) +
-      num(row.querySelector(".ship").value) +
-      num(row.querySelector(".tax").value) -
-      num(row.querySelector(".coupon").value);
+    const shop = row.dataset.shop;
+    const settings = document.querySelector(`.compareSettingRow[data-shop="${shop}"]`);
+    const price = num(row.querySelector(".price").value);
+    const ship = settings ? num(settings.querySelector(".ship").value) : 0;
+    const tax = settings ? num(settings.querySelector(".tax").value) : 0;
+    const coupon = settings ? num(settings.querySelector(".coupon").value) : 0;
+    const total = price + ship + tax - coupon;
 
     row.dataset.total = total;
-    row.querySelector(".total").textContent = yen(total);
     row.classList.remove("best");
+    row.querySelector(".compareTotal").textContent = yen(total);
+    row.querySelector(".compareBreakdown").textContent =
+      price > 0 ? `Ship ${yen(ship)} / Tax ${yen(tax)} / Coupon -${yen(coupon)}` : "";
 
-    if (total > 0 && total < best) {
+    if (price > 0 && total > 0 && total < best) {
       best = total;
-      bestShop = row.dataset.shop;
+      bestShop = shop;
     }
   });
 
   rows.forEach((row) => {
     const total = Number(row.dataset.total);
-    const diff = row.querySelector(".diff");
+    const breakdown = row.querySelector(".compareBreakdown");
 
     if (total > 0 && total === best) {
       row.classList.add("best");
-      diff.textContent = "Best";
+      breakdown.textContent = "Best · " + breakdown.textContent;
     } else if (total > 0 && best < Infinity) {
-      diff.textContent = "+" + yen(total - best);
-    } else {
-      diff.textContent = "";
+      breakdown.textContent = "+" + yen(total - best) + " · " + breakdown.textContent;
     }
   });
 
@@ -179,14 +310,6 @@ function calcPrices() {
   }
 }
 
-document.getElementById("calcPrices").onclick = calcPrices;
-document.getElementById("clearPrices").onclick = () => {
-  document.getElementById("compareMemo").value = "";
-  document.querySelectorAll(".priceRow input").forEach((input) => {
-    input.value = "";
-  });
-  calcPrices();
-};
 
 function countryLabel(country) {
   return DB.countryLabels && DB.countryLabels[country] ? DB.countryLabels[country] : country;

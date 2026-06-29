@@ -362,3 +362,155 @@ footer {
     grid-row:1 / 2;
   }
 }
+
+
+/* Compare v9: price-first layout only */
+.compareV9Intro {
+  margin: 0 0 10px;
+}
+
+.compareLinks {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0 0;
+  scrollbar-width: none;
+}
+
+.compareLinks::-webkit-scrollbar {
+  display: none;
+}
+
+.compareTable {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.compareRowV9 {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 11px;
+  display: grid;
+  grid-template-columns: 86px 1fr 104px;
+  gap: 10px;
+  align-items: center;
+}
+
+.compareRowV9.best {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+
+.compareRowV9.best .compareShop::after {
+  content: " BEST";
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .08em;
+  margin-top: 2px;
+}
+
+.compareShop {
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.comparePriceInput {
+  min-height: 46px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 14px;
+}
+
+.compareTotalBox {
+  text-align: right;
+}
+
+.compareTotal {
+  font-size: 17px;
+  font-weight: 950;
+}
+
+.compareBreakdown {
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+.compareSettings {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.compareSettings summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.compareSettings summary::-webkit-details-marker {
+  display: none;
+}
+
+.compareSettings summary::after {
+  content: " +";
+}
+
+.compareSettings[open] summary::after {
+  content: " −";
+}
+
+.compareSettingGrid {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.compareSettingRow {
+  display: grid;
+  grid-template-columns: 86px 1fr 1fr 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.compareSettingRow label {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.compareSettingRow input {
+  min-height: 40px;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+.compareActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width:560px) {
+  .compareRowV9 {
+    grid-template-columns: 78px 1fr;
+  }
+
+  .compareTotalBox {
+    grid-column: 1 / -1;
+    text-align: left;
+    padding-left: 88px;
+  }
+
+  .compareSettingRow {
+    grid-template-columns: 78px 1fr;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "version": "8.5",
+  "version": "8.0",
   "shops": [
     "END",
     "SSENSE",
@@ -21,20 +21,20 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/autry",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=autry",
+          "type": "search"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=autry",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/autry_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=autry",
+          "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-autry/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=autry",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=autry",
@@ -72,7 +72,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/carhartt%20wip_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/carhartt%20wip_d#/dept=men&d=50812",
           "type": "brand"
         },
         "FARFETCH": {
@@ -115,7 +115,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dickies_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dickies_d#/dept=men&d=1980",
           "type": "brand"
         },
         "FARFETCH": {
@@ -158,7 +158,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/levi's_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/levi's_d#/dept=men&d=534",
           "type": "brand"
         },
         "FARFETCH": {
@@ -202,7 +202,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/new%20balance_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/new%20balance_d#/dept=men&d=1539",
           "type": "brand"
         },
         "FARFETCH": {
@@ -246,7 +246,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/nike_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/nike_d#/dept=men&d=682",
           "type": "brand"
         },
         "FARFETCH": {
@@ -290,7 +290,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/oakley_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/oakley_d#/dept=men&d=11218",
           "type": "brand"
         },
         "FARFETCH": {
@@ -333,7 +333,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/polo%20ralph%20lauren_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/polo%20ralph%20lauren_d#/dept=men&d=165",
           "type": "brand"
         },
         "FARFETCH": {
@@ -376,7 +376,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stussy_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stussy_d#/dept=men&d=1684",
           "type": "brand"
         },
         "FARFETCH": {
@@ -419,12 +419,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/the%20north%20face_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/the%20north%20face_d#/dept=men&d=4633",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-the-north-face-black-series/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=the%20north%20face",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=the%20north%20face",
@@ -463,7 +463,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/vans_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/vans_d#/dept=men&d=684",
           "type": "brand"
         },
         "FARFETCH": {
@@ -506,12 +506,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/about:blank_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/about:blank_d#/dept=men&d=55495",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-about-blank/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=about%3Ablank",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=about%3Ablank",
@@ -549,12 +549,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/aries_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/aries_d#/dept=men&d=23105",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=aries",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/aries/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=aries",
@@ -592,7 +592,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/barbour_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/barbour_d#/dept=men&d=2966",
           "type": "brand"
         },
         "FARFETCH": {
@@ -635,12 +635,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/cole%20buxton_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/cole%20buxton_d#/dept=men&d=55463",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-cole-buxton/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=cole%20buxton",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=cole%20buxton",
@@ -721,7 +721,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fred%20perry_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fred%20perry_d#/dept=men&d=843",
           "type": "brand"
         },
         "FARFETCH": {
@@ -776,8 +776,8 @@
           "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-johnstons-of-elgin/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=johnstons%20of%20elgin",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=johnstons%20of%20elgin",
@@ -808,7 +808,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maharishi_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maharishi_d#/dept=men&d=134",
           "type": "brand"
         },
         "FARFETCH": {
@@ -851,7 +851,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/represent_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/represent_d#/dept=men&d=34237",
           "type": "brand"
         },
         "FARFETCH": {
@@ -898,8 +898,8 @@
           "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-represent-247/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=represent%20247",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=represent%20247",
@@ -936,16 +936,16 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/studio-nicholson",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=studio%20nicholson",
+          "type": "search"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/studio-nicholson",
-          "type": "brand"
+          "url": "https://www.ssense.com/ja-jp/men?q=studio%20nicholson",
+          "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/studio%20nicholson_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=studio%20nicholson",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=studio%20nicholson",
@@ -988,8 +988,8 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/tricker's_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=tricker%27s",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=tricker%27s",
@@ -1001,6 +1001,50 @@
         }
       },
       "tier": "コア",
+      "countryGroupLabel": "UK",
+      "countryLabel": "UK"
+    },
+    {
+      "name": "Umbro",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "tier": "コア",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=umbro",
+          "type": "search"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=umbro",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=umbro",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=umbro",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=umbro",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "HBX",
+        "FARFETCH",
+        "YOOX"
+      ],
       "countryGroupLabel": "UK",
       "countryLabel": "UK"
     },
@@ -1024,7 +1068,7 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/universal%20works_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/universal%20works_d#/dept=men&d=24883",
           "type": "brand"
         },
         "FARFETCH": {
@@ -1073,8 +1117,8 @@
           "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-vivobarefoot/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=vivobarefoot",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=vivobarefoot",
@@ -1115,8 +1159,8 @@
           "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-wax-london/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=wax%20london",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=wax%20london",
@@ -1154,8 +1198,8 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%e3%83%a1%e3%83%b3%e3%82%ba/shoponline/ymc%20you%20must%20create_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ymc",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=ymc",
@@ -1194,8 +1238,8 @@
           "type": "search"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/song-for-the-mute",
-          "type": "brand"
+          "url": "https://www.ssense.com/ja-jp/men?q=song%20for%20the%20mute",
+          "type": "search"
         },
         "YOOX": {
           "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=song%20for%20the%20mute",
@@ -1206,8 +1250,8 @@
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/song-for-the-mute",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=song%20for%20the%20mute",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1285,12 +1329,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/adidas_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/adidas_d#/dept=men&d=1319",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=adidas",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/adidas/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/adidas-originals",
@@ -1322,7 +1366,7 @@
       "shops": {
         "END": {
           "url": "https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl",
-          "type": "search"
+          "type": "brand"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=adidas%20spzl",
@@ -1373,7 +1417,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/puma_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/puma_d#/dept=men&d=284",
           "type": "brand"
         },
         "FARFETCH": {
@@ -1416,7 +1460,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maison%20margiela_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maison%20margiela_d#/dept=men&d=50",
           "type": "brand"
         },
         "FARFETCH": {
@@ -1460,16 +1504,16 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/salomon_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/salomon_d#/dept=men&d=15398",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-salomon/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=salomon",
+          "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/salomon-advanced",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=salomon",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1503,12 +1547,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/and%20wander_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/and%20wander_d#/dept=men&d=41082",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=and%20wander",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/and-wander/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/and-wander",
@@ -1547,12 +1591,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%e3%83%a1%e3%83%b3%e3%82%ba/shoponline/asics%20x%20a.p.c._d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=asics",
+          "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=asics",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/asics/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/asics",
@@ -1590,12 +1634,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/auralee_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/auralee_d#/dept=men&d=45710",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=auralee",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/auralee/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=auralee",
@@ -1637,8 +1681,8 @@
           "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-beams-plus/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=beams%20plus",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=beams%20plus",
@@ -1676,7 +1720,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/y-3_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/y-3_d#/dept=men&d=2558",
           "type": "brand"
         },
         "FARFETCH": {
@@ -1719,12 +1763,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/ader%20error_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/ader%20error_d#/dept=men&d=42905",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=ader%20error",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/ader-error/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/ader-error",
@@ -1762,7 +1806,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/andersson%20bell_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/andersson%20bell_d#/dept=men&d=47517",
           "type": "brand"
         },
         "FARFETCH": {
@@ -1797,8 +1841,8 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/cayl",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=cayl",
+          "type": "search"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=cayl",
@@ -1813,8 +1857,8 @@
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/cayl",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=cayl",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1841,24 +1885,24 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=post%20archive%20faction%20%28paf%29",
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=post%20archive%20faction",
           "type": "search"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/post-archive-faction",
-          "type": "brand"
+          "url": "https://www.ssense.com/ja-jp/men?q=post%20archive%20faction",
+          "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/post%20archive%20faction%20(paf)_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=post%20archive%20faction",
+          "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-post-archive-fashion/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=post%20archive%20faction",
+          "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/post-archive-faction-1",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=post%20archive%20faction",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1900,8 +1944,8 @@
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/san-san-gear",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=san%20san%20gear",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1935,12 +1979,12 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/thisisneverthat_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/thisisneverthat_d#/dept=men&d=49634",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-this-is-never-that/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=thisisneverthat",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/thisisneverthat",
@@ -1980,8 +2024,8 @@
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/unaffected_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=unaffected",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=unaffected",
@@ -2066,12 +2110,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/acne%20studios_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/acne%20studios_d#/dept=men&d=19295",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=acne%20studios",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/acne-studios/items.aspx",
+          "type": "brand"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/acne-studios",
@@ -2109,12 +2153,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/c.p.%20company_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/c.p.%20company_d#/dept=men&d=236",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-cp-company/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=c.p.%20company",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/c-p-company",
@@ -2152,7 +2196,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/norse%20projects_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/norse%20projects_d#/dept=men&d=16337",
           "type": "brand"
         },
         "FARFETCH": {
@@ -2195,7 +2239,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/our%20legacy_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/our%20legacy_d#/dept=men&d=12038",
           "type": "brand"
         },
         "FARFETCH": {
@@ -2232,24 +2276,24 @@
       "tier": "候補",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/roa",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=roa",
+          "type": "search"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=roa",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/roa_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=roa",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=roa",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/roa",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=roa",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2282,7 +2326,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stone%20island_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stone%20island_d#/dept=men&d=269",
           "type": "brand"
         },
         "FARFETCH": {
@@ -2325,12 +2369,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fear%20of%20god%20essentials_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fear%20of%20god%20essentials_d#/dept=men&d=48461",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-essentials/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=fear%20of%20god%20essentials",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/fear-of-god-essentials",
@@ -2368,20 +2412,20 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/bass-weejuns",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=g.h.bass",
+          "type": "search"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=g.h.bass",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/g.h.%20bass%20&%20co_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=g.h.bass",
+          "type": "search"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-g-h-bass/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=g.h.bass",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=g.h.bass",
@@ -2412,7 +2456,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/burberry_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/burberry_d#/dept=men&d=28997",
           "type": "brand"
         },
         "FARFETCH": {
@@ -2456,12 +2500,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/clarks%20originals_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/clarks%20originals_d#/dept=men&d=2124",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-clarks-originals/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=clarks%20originals",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=clarks%20originals",
@@ -2500,12 +2544,12 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dr.%20martens_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dr.%20martens_d#/dept=men&d=960",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/248821-designer-dr-martens/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=dr.%20martens",
+          "type": "search"
         },
         "HBX": {
           "url": "https://hbx.com/jp/search?q=dr.%20martens",
@@ -2586,16 +2630,16 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/john-smedley",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=john%20smedley",
+          "type": "search"
         },
         "SSENSE": {
           "url": "https://www.ssense.com/ja-jp/men?q=john%20smedley",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/john%20smedley_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=john%20smedley",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=john%20smedley",
@@ -2847,7 +2891,7 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/birkenstock_d",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/birkenstock_d#/dept=men&d=1671",
           "type": "brand"
         },
         "FARFETCH": {
@@ -2933,8 +2977,8 @@
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/ami%20alexandre%20mattiussi_d",
-          "type": "brand"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ami%20paris",
+          "type": "search"
         },
         "FARFETCH": {
           "url": "https://www.farfetch.com/jp/shopping/men/designer-ami-paris/items.aspx",
@@ -3086,50 +3130,6 @@
       ],
       "countryGroupLabel": "USA",
       "countryLabel": "USA"
-    },
-    {
-      "name": "Umbro",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "tier": "コア",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/umbro",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=umbro",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-umbro/items.aspx",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/umbro_d",
-          "type": "brand"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/umbro",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ]
     }
   ],
   "removedAtV2": [
