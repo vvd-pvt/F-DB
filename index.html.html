@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>END Brand Navigator Mobile</title>
+<style>
+:root {
+  --bg:#f4f3ef; --panel:#ffffff; --text:#111111; --muted:#777777; --line:#dedad1;
+  --button:#111111; --buttonText:#ffffff; --chip:#f8f7f3; --hover:#111111; --hoverText:#ffffff;
+}
+body.dark {
+  --bg:#111111; --panel:#1b1b1b; --text:#f3f1ea; --muted:#aaa; --line:#383838;
+  --button:#f3f1ea; --buttonText:#111; --chip:#242424; --hover:#f3f1ea; --hoverText:#111;
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+.wrap {
+  max-width:640px;
+  margin:0 auto;
+  padding:16px 14px 92px;
+}
+.header {
+  border-bottom:1px solid var(--line);
+  padding-bottom:14px;
+  margin-bottom:14px;
+}
+h1 {
+  margin:0;
+  font-size:24px;
+  letter-spacing:.01em;
+}
+.sub {
+  margin-top:7px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.65;
+}
+.tools {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:var(--bg);
+  padding:10px 0 12px;
+  display:grid;
+  grid-template-columns:1fr 74px 64px;
+  gap:8px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:10px;
+}
+input {
+  width:100%;
+  min-height:46px;
+  padding:12px 13px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--panel);
+  color:var(--text);
+  font-size:16px;
+}
+button {
+  min-height:46px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px 10px;
+  background:var(--panel);
+  color:var(--text);
+  cursor:pointer;
+  font-size:12px;
+}
+button.active, button:hover {
+  background:var(--button);
+  color:var(--buttonText);
+}
+.filters {
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:4px 0 8px;
+  margin:0 -2px 6px;
+  -webkit-overflow-scrolling:touch;
+}
+.filters::-webkit-scrollbar { display:none; }
+.chip {
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:9px 12px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--chip);
+  color:var(--text);
+  cursor:pointer;
+  font-size:12px;
+  white-space:nowrap;
+}
+.chip.active {
+  background:var(--button);
+  color:var(--buttonText);
+}
+.grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  align-items:start;
+}
+.category {
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px;
+}
+h2 {
+  margin:0 0 12px;
+  font-size:17px;
+  line-height:1.35;
+  border-bottom:1px solid var(--line);
+  padding-bottom:10px;
+}
+.country-block {
+  margin-bottom:17px;
+}
+h3 {
+  margin:0 0 8px;
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.08em;
+}
+.brand-list {
+  display:grid;
+  gap:8px;
+}
+.brand {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  min-height:48px;
+  padding:12px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--chip);
+  color:var(--text);
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.brand:active {
+  transform:scale(.99);
+}
+.brand-name {
+  font-size:15px;
+  line-height:1.25;
+  font-weight:650;
+}
+.meta {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+}
+.country {
+  font-size:10px;
+  color:var(--muted);
+}
+.kind {
+  font-size:10px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:2px 6px;
+  color:var(--muted);
+}
+.empty {
+  display:none;
+  text-align:center;
+  padding:34px 16px;
+  color:var(--muted);
+  border:1px dashed var(--line);
+  border-radius:14px;
+}
+.footer {
+  margin-top:14px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.7;
+}
+@media (min-width:760px) {
+  .wrap { max-width:900px; }
+  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div>
+      <h1>END Brand Navigator<br><span style="font-size:14px;color:var(--muted);font-weight:500;">Mobile</span></h1>
+      <div class="sub">ストリート / きれいめ（Maison Margiela寄り） / 靴・バッグ・小物。国順で表示。ブランドページがないものは検索結果へ。</div>
+    </div>
+    <div class="sub">スマホで開いてホーム画面に追加 / リンクは同じタブ</div>
+  </div>
+
+  <div class="tools">
+    <input id="search" placeholder="ブランド検索：例 Wax / Margiela / SPZL">
+    <button id="allBtn" class="active">すべて表示</button>
+    <button id="themeBtn">Dark</button>
+  </div>
+
+  <div class="filters" id="categoryFilters"></div>
+  <div class="filters" id="countryFilters"></div>
+
+  <main class="grid" id="grid"></main>
+  <div class="empty" id="empty">該当ブランドがありません。</div>
+
+  <div class="footer">
+    Source: uploaded END. brands HTML. adidas SPZL is linked to END catalog search:
+    https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl
+  </div>
+</div>
+
+<script>
+const brands = [{"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "about:blank", "href": "https://www.endclothing.com/jp/brands/about-blank", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Aries", "href": "https://www.endclothing.com/jp/brands/aries", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Barbour", "href": "https://www.endclothing.com/jp/brands/barbour", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Cole Buxton", "href": "https://www.endclothing.com/jp/brands/cole-buxton", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Dr. Martens", "href": "https://www.endclothing.com/jp/brands/dr-martens", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Fred Perry", "href": "https://www.endclothing.com/jp/brands/fred-perry", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Maharishi", "href": "https://www.endclothing.com/jp/brands/maharishi", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Represent", "href": "https://www.endclothing.com/jp/brands/represent", "kind": "brand"}, {"category": "Street", "countryGroup": "イギリス", "country": "イギリス", "name": "Represent 247", "href": "https://www.endclothing.com/jp/brands/represent-247", "kind": "brand"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas", "href": "https://www.endclothing.com/jp/brands/adidas", "kind": "brand"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas SPZL", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl", "kind": "search"}, {"category": "Street", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Puma", "href": "https://www.endclothing.com/jp/brands/puma", "kind": "brand"}, {"category": "Street", "countryGroup": "フランス", "country": "フランス", "name": "Salomon", "href": "https://www.endclothing.com/jp/brands/salomon", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Brain Dead", "href": "https://www.endclothing.com/jp/brands/brain-dead", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Carhartt WIP", "href": "https://www.endclothing.com/jp/brands/carhartt", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Dickies", "href": "https://www.endclothing.com/jp/brands/dickies", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Fear of God ESSENTIALS", "href": "https://www.endclothing.com/jp/brands/fear-of-god-essentials", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Levi's", "href": "https://www.endclothing.com/jp/brands/levi-s", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Nike", "href": "https://www.endclothing.com/jp/brands/nike", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Oakley", "href": "https://www.endclothing.com/jp/brands/oakley", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "PLEASURES", "href": "https://www.endclothing.com/jp/brands/pleasures", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Red Wing", "href": "https://www.endclothing.com/jp/brands/red-wing", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Stussy", "href": "https://www.endclothing.com/jp/brands/stussy", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "The North Face", "href": "https://www.endclothing.com/jp/brands/the-north-face", "kind": "brand"}, {"category": "Street", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Vans", "href": "https://www.endclothing.com/jp/brands/vans", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "A Bathing Ape", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=a%20bathing%20ape", "kind": "search"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "and wander", "href": "https://www.endclothing.com/jp/brands/and-wander", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Asics", "href": "https://www.endclothing.com/jp/brands/asics", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Neighborhood", "href": "https://www.endclothing.com/jp/brands/neighborhood", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "Needles", "href": "https://www.endclothing.com/jp/brands/needles", "kind": "brand"}, {"category": "Street", "countryGroup": "日本", "country": "日本", "name": "WTAPS", "href": "https://www.endclothing.com/jp/brands/wtaps", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "C.P. Company", "href": "https://www.endclothing.com/jp/brands/cp-company", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Diemme", "href": "https://www.endclothing.com/jp/brands/diemme", "kind": "brand"}, {"category": "Street", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Stone Island", "href": "https://www.endclothing.com/jp/brands/stone-island", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Burberry", "href": "https://www.endclothing.com/jp/brands/burberry", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Clarks Originals", "href": "https://www.endclothing.com/jp/brands/clarks-originals", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Folk", "href": "https://www.endclothing.com/jp/brands/folk", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Grenson", "href": "https://www.endclothing.com/jp/brands/grenson", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Paul Smith", "href": "https://www.endclothing.com/jp/brands/paul-smith", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Universal Works", "href": "https://www.endclothing.com/jp/brands/universal-works", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "Wax London", "href": "https://www.endclothing.com/jp/brands/wax-london", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "イギリス", "country": "イギリス", "name": "YMC", "href": "https://www.endclothing.com/jp/brands/ymc", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Birkenstock", "href": "https://www.endclothing.com/jp/brands/birkenstock", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "A.P.C.", "href": "https://www.endclothing.com/jp/brands/a-p-c", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "AMI Paris", "href": "https://www.endclothing.com/jp/brands/ami-paris", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "フランス", "country": "フランス", "name": "Maison Margiela", "href": "https://www.endclothing.com/jp/brands/maison-margiela", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "アメリカ", "country": "アメリカ", "name": "New Balance", "href": "https://www.endclothing.com/jp/brands/new-balance", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Polo Ralph Lauren", "href": "https://www.endclothing.com/jp/brands/polo-ralph-lauren", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Auralee", "href": "https://www.endclothing.com/jp/brands/auralee", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Beams Plus", "href": "https://www.endclothing.com/jp/brands/beams-plus", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Homme", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20homme", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Play", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20play", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Comme des Garcons Shirt", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20shirt", "kind": "search"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Human Made", "href": "https://www.endclothing.com/jp/brands/human-made", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "nanamica", "href": "https://www.endclothing.com/jp/brands/nanamica", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "日本", "country": "日本", "name": "Porter-Yoshida & Co.", "href": "https://www.endclothing.com/jp/brands/porter", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "スウェーデン", "name": "Acne Studios", "href": "https://www.endclothing.com/jp/brands/acne-studios", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "スウェーデン", "name": "Our Legacy", "href": "https://www.endclothing.com/jp/brands/our-legacy", "kind": "brand"}, {"category": "Clean & Mode", "countryGroup": "その他ヨーロッパ", "country": "デンマーク", "name": "Norse Projects", "href": "https://www.endclothing.com/jp/brands/norse-projects", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Clarks Originals", "href": "https://www.endclothing.com/jp/brands/clarks-originals", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Dr. Martens", "href": "https://www.endclothing.com/jp/brands/dr-martens", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "イギリス", "country": "イギリス", "name": "Grenson", "href": "https://www.endclothing.com/jp/brands/grenson", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas", "href": "https://www.endclothing.com/jp/brands/adidas", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "adidas SPZL", "href": "https://www.endclothing.com/jp/catalogsearch/results?q=adidas%20spzl", "kind": "search"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Birkenstock", "href": "https://www.endclothing.com/jp/brands/birkenstock", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "ドイツ", "country": "ドイツ", "name": "Puma", "href": "https://www.endclothing.com/jp/brands/puma", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "フランス", "country": "フランス", "name": "Salomon", "href": "https://www.endclothing.com/jp/brands/salomon", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "New Balance", "href": "https://www.endclothing.com/jp/brands/new-balance", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Nike", "href": "https://www.endclothing.com/jp/brands/nike", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Oakley", "href": "https://www.endclothing.com/jp/brands/oakley", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Red Wing", "href": "https://www.endclothing.com/jp/brands/red-wing", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "アメリカ", "country": "アメリカ", "name": "Vans", "href": "https://www.endclothing.com/jp/brands/vans", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "日本", "country": "日本", "name": "Asics", "href": "https://www.endclothing.com/jp/brands/asics", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "日本", "country": "日本", "name": "Porter-Yoshida & Co.", "href": "https://www.endclothing.com/jp/brands/porter", "kind": "brand"}, {"category": "Footwear & Accessories", "countryGroup": "その他ヨーロッパ", "country": "イタリア", "name": "Diemme", "href": "https://www.endclothing.com/jp/brands/diemme", "kind": "brand"}];
+const categoryOrder = ["Street", "Clean & Mode", "Footwear & Accessories"];
+const countryOrder = ["イギリス", "ドイツ", "フランス", "アメリカ", "日本", "その他ヨーロッパ"];
+let selectedCategory = "all";
+let selectedCountry = "all";
+
+const labels = {
+  "Street":"Street / ストリート",
+  "Clean & Mode":"Clean & Mode / きれいめ",
+  "Footwear & Accessories":"Footwear & Accessories / 靴・バッグ・小物"
+};
+
+function uniq(arr) { return [...new Set(arr)]; }
+
+function renderFilters() {
+  const cf = document.getElementById("categoryFilters");
+  cf.innerHTML = "";
+  [["all","すべてのカテゴリ"], ...categoryOrder.map(c=>[c, labels[c]])].forEach(([val, lab]) => {
+    const el = document.createElement("button");
+    el.className = "chip" + (selectedCategory === val ? " active" : "");
+    el.textContent = lab;
+    el.onclick = () => { selectedCategory = val; render(); };
+    cf.appendChild(el);
+  });
+
+  const yf = document.getElementById("countryFilters");
+  yf.innerHTML = "";
+  [["all","すべての国"], ...countryOrder.map(c=>[c,c])].forEach(([val, lab]) => {
+    const el = document.createElement("button");
+    el.className = "chip" + (selectedCountry === val ? " active" : "");
+    el.textContent = lab;
+    el.onclick = () => { selectedCountry = val; render(); };
+    yf.appendChild(el);
+  });
+}
+
+function visibleBrands() {
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  return brands.filter(b => {
+    const matchQ = !q || [b.name,b.category,b.country,b.countryGroup].join(" ").toLowerCase().includes(q);
+    const matchCat = selectedCategory === "all" || b.category === selectedCategory;
+    const matchCountry = selectedCountry === "all" || b.countryGroup === selectedCountry;
+    return matchQ && matchCat && matchCountry;
+  });
+}
+
+function render() {
+  renderFilters();
+  const grid = document.getElementById("grid");
+  const empty = document.getElementById("empty");
+  const list = visibleBrands();
+  grid.innerHTML = "";
+
+  categoryOrder.forEach(cat => {
+    if (selectedCategory !== "all" && selectedCategory !== cat) return;
+    const catItems = list.filter(b => b.category === cat);
+    if (!catItems.length) return;
+
+    const section = document.createElement("section");
+    section.className = "category";
+    section.innerHTML = `<h2>${labels[cat]}</h2>`;
+
+    countryOrder.forEach(countryGroup => {
+      const countryItems = catItems.filter(b => b.countryGroup === countryGroup);
+      if (!countryItems.length) return;
+
+      const block = document.createElement("div");
+      block.className = "country-block";
+      block.innerHTML = `<h3>${countryGroup}</h3><div class="brand-list"></div>`;
+      const listEl = block.querySelector(".brand-list");
+
+      countryItems.sort((a,b)=>a.name.localeCompare(b.name)).forEach(b => {
+        const a = document.createElement("a");
+        a.className = "brand";
+        a.href = b.href;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        const kind = b.kind === "search" ? "検索" : "Brand";
+        a.innerHTML = `<span class="brand-name">${b.name}${b.kind==="search" ? " 🔍" : ""}</span><span class="meta"><span class="country">${b.country}</span><span class="kind">${kind}</span></span>`;
+        listEl.appendChild(a);
+      });
+      section.appendChild(block);
+    });
+    grid.appendChild(section);
+  });
+
+  empty.style.display = grid.children.length ? "none" : "block";
+  document.getElementById("allBtn").classList.toggle("active", selectedCategory === "all" && selectedCountry === "all" && !document.getElementById("search").value);
+}
+
+document.getElementById("search").addEventListener("input", render);
+document.getElementById("allBtn").onclick = () => {
+  selectedCategory = "all"; selectedCountry = "all"; document.getElementById("search").value = ""; render();
+};
+document.getElementById("themeBtn").onclick = () => {
+  document.body.classList.toggle("dark");
+  document.getElementById("themeBtn").textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
+};
+render();
+</script>
+</body>
+</html>
