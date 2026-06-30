@@ -1,6 +1,18 @@
 const SETTINGS_KEY = "fdb_v8_settings";
 const THEME_KEY = "fdb_v8_theme";
-const SHOP_ORDER = ["END", "SSENSE", "FARFETCH", "YOOX", "HBX"];
+const SHOP_ORDER = ["END", "SSENSE", "FARFETCH", "YOOX", "HBX", "JDS"];
+
+const SHOP_META = {
+  END: { label: "END", name: "END." },
+  SSENSE: { label: "SSN", name: "SSENSE" },
+  FARFETCH: { label: "FTF", name: "FARFETCH" },
+  YOOX: { label: "YX", name: "YOOX" },
+  HBX: { label: "HBX", name: "HBX" },
+  JDS: { label: "JDS", name: "JD Sports" }
+};
+
+function shopLabel(shop) { return SHOP_META[shop]?.label || shop; }
+function shopTitle(shop) { return SHOP_META[shop]?.name || shop; }
 
 let DB = null;
 let state = loadState();
@@ -65,7 +77,8 @@ function productUrl(shop, query) {
     SSENSE: `https://www.ssense.com/ja-jp/men?q=${q}`,
     FARFETCH: `https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=${q}`,
     YOOX: `https://www.yoox.com/jp/メンズ/shoponline?textsearch=${q}`,
-    HBX: `https://hbx.com/jp/search?q=${q}`
+    HBX: `https://hbx.com/jp/search?q=${q}`,
+    JDS: `https://www.global.jdsports.com/search/${q}/`
   };
 
   return urls[shop] || "#";
@@ -79,7 +92,8 @@ function renderProductLinks() {
   SHOP_ORDER.forEach((shop) => {
     const a = document.createElement("a");
     a.className = "searchLink";
-    a.textContent = shop;
+    a.textContent = shopLabel(shop);
+    a.title = shopTitle(shop);
     a.href = productUrl(shop, q);
     a.target = "_blank";
     wrap.appendChild(a);
@@ -95,7 +109,7 @@ document.getElementById("productSearch").addEventListener("keydown", (e) => {
 });
 
 
-const COMPARE_SETTINGS_KEY = "fdb_v9_compare_settings";
+const COMPARE_SETTINGS_KEY = "fdb_v9_1_compare_settings";
 
 function defaultCompareSettings() {
   return {
@@ -103,7 +117,8 @@ function defaultCompareSettings() {
     SSENSE: { ship: 3500, tax: 0, coupon: 0 },
     FARFETCH: { ship: 0, tax: 0, coupon: 0 },
     YOOX: { ship: 2500, tax: 0, coupon: 0 },
-    HBX: { ship: 3000, tax: 0, coupon: 0 }
+    HBX: { ship: 3000, tax: 0, coupon: 0 },
+    JDS: { ship: 3000, tax: 0, coupon: 0 }
   };
 }
 
@@ -139,7 +154,8 @@ function renderCompareProductLinks() {
   SHOP_ORDER.forEach((shop) => {
     const a = document.createElement("a");
     a.className = "searchLink";
-    a.textContent = shop;
+    a.textContent = shopLabel(shop);
+    a.title = shopTitle(shop);
     a.href = productUrl(shop, q);
     a.target = "_blank";
     wrap.appendChild(a);
@@ -194,7 +210,7 @@ function buildPriceGrid() {
     row.className = "compareRowV9";
     row.dataset.shop = shop;
     row.innerHTML = `
-      <div class="compareShop">${shop}</div>
+      <div class="compareShop" title="${shopTitle(shop)}">${shopLabel(shop)}</div>
       <input class="comparePriceInput price" inputmode="numeric" placeholder="Price">
       <div class="compareTotalBox">
         <div class="compareTotal">¥0</div>
@@ -207,7 +223,7 @@ function buildPriceGrid() {
     setting.className = "compareSettingRow";
     setting.dataset.shop = shop;
     setting.innerHTML = `
-      <label>${shop}</label>
+      <label title="${shopTitle(shop)}">${shopLabel(shop)}</label>
       <input class="ship" inputmode="numeric" placeholder="Shipping" value="${saved[shop].ship}">
       <input class="tax" inputmode="numeric" placeholder="Duty / Tax" value="${saved[shop].tax}">
       <input class="coupon" inputmode="numeric" placeholder="Coupon" value="${saved[shop].coupon}">
@@ -411,7 +427,7 @@ function brandSearchLinks(brand, value) {
   const query = (brand + " " + (value || "")).trim();
 
   return SHOP_ORDER.map((shop) => {
-    return `<a class="searchLink" target="_blank" href="${productUrl(shop, query)}">${shop}</a>`;
+    return `<a class="searchLink" target="_blank" title="${shopTitle(shop)}" href="${productUrl(shop, query)}">${shopLabel(shop)}</a>`;
   }).join("");
 }
 
@@ -435,7 +451,7 @@ function renderBrands() {
     const shopLinks = (brand.shopPriority || SHOP_ORDER)
       .map((shop) => {
         const data = brand.shops[shop] || { url: "#" };
-        return `<a class="shopLink" href="${data.url}" target="_blank">${shop}</a>`;
+        return `<a class="shopLink" href="${data.url}" target="_blank" title="${shopTitle(shop)}">${shopLabel(shop)}</a>`;
       })
       .join("");
 

@@ -1,491 +1,14 @@
 {
-  "version": "8.0",
+  "version": "9.1",
   "shops": [
     "END",
     "SSENSE",
     "FARFETCH",
     "YOOX",
-    "HBX"
+    "HBX",
+    "JDS"
   ],
   "brands": [
-    {
-      "name": "Autry",
-      "country": "イタリア",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=autry",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=autry",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=autry",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=autry",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=autry",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "ITA"
-    },
-    {
-      "name": "Carhartt WIP",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/carhartt",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=carhartt%20wip",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/carhartt%20wip_d#/dept=men&d=50812",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=carhartt%20wip",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=carhartt%20wip",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Dickies",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/dickies",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=dickies",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dickies_d#/dept=men&d=1980",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=dickies",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/dickies",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Levi's",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/levi-s",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=levi%27s",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/levi's_d#/dept=men&d=534",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=levi%27s",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=levi%27s",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "New Balance",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/new-balance",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=new%20balance",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/new%20balance_d#/dept=men&d=1539",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=new%20balance",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/new-balance",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "YOOX",
-        "FARFETCH",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Nike",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/nike",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/nike",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/nike_d#/dept=men&d=682",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=nike",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/nike",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Oakley",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/oakley",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/oakley",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/oakley_d#/dept=men&d=11218",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=oakley",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/oakley",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Polo Ralph Lauren",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/polo-ralph-lauren",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/polo-ralph-lauren",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/polo%20ralph%20lauren_d#/dept=men&d=165",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=polo%20ralph%20lauren",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=polo%20ralph%20lauren",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "YOOX",
-        "FARFETCH",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Stussy",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/stussy",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=stussy",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stussy_d#/dept=men&d=1684",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=stussy",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=stussy",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "The North Face",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/the-north-face",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=the%20north%20face",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/the%20north%20face_d#/dept=men&d=4633",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=the%20north%20face",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=the%20north%20face",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Vans",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/vans",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/vans",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/vans_d#/dept=men&d=684",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=vans",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/vans",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
     {
       "name": "about:blank",
       "country": "イギリス",
@@ -516,48 +39,9 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=about%3Ablank",
           "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Aries",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/aries",
-          "type": "brand"
         },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=aries",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/aries_d#/dept=men&d=23105",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/aries/items.aspx",
-          "type": "brand"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=aries",
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/about%3Ablank/",
           "type": "search"
         }
       },
@@ -566,747 +50,189 @@
         "SSENSE",
         "FARFETCH",
         "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Barbour",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/barbour",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/barbour",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/barbour_d#/dept=men&d=2966",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=barbour",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=barbour",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Cole Buxton",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/cole-buxton",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=cole%20buxton",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/cole%20buxton_d#/dept=men&d=55463",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=cole%20buxton",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=cole%20buxton",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Folk",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/folk",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=folk",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=folk",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=folk",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=folk",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Fred Perry",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/fred-perry",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/fred-perry",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fred%20perry_d#/dept=men&d=843",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=fred%20perry",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=fred%20perry",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Johnstons of Elgin",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "shopPriority": [
-        "END",
-        "FARFETCH",
-        "YOOX",
-        "SSENSE",
-        "HBX"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=johnstons%20of%20elgin",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=johnstons%20of%20elgin",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=johnstons%20of%20elgin",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=johnstons%20of%20elgin",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=johnstons%20of%20elgin",
-          "type": "search"
-        }
-      },
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Maharishi",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/maharishi",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=maharishi",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maharishi_d#/dept=men&d=134",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=maharishi",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/maharishi",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Represent",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/represent",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/represent",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/represent_d#/dept=men&d=34237",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=represent",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=represent",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Represent 247",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/represent-247",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=represent%20247",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=represent%20247",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=represent%20247",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=represent%20247",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Studio Nicholson",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=studio%20nicholson",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=studio%20nicholson",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=studio%20nicholson",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=studio%20nicholson",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=studio%20nicholson",
-          "type": "search"
-        }
-      },
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Tricker's",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "shopPriority": [
-        "END",
-        "FARFETCH",
-        "YOOX",
-        "SSENSE",
-        "HBX"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=tricker%27s",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=tricker%27s",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=tricker%27s",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=tricker%27s",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=tricker%27s",
-          "type": "search"
-        }
-      },
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Umbro",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "tier": "コア",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=umbro",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=umbro",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=umbro",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=umbro",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=umbro",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
         "HBX",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
+        "JDS"
+      ]
     },
     {
-      "name": "Universal Works",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
+      "name": "A Bathing Ape",
+      "country": "日本",
+      "countryGroup": "日本",
       "categories": [
-        "Modern"
+        "Street"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/universal-works",
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=a%20bathing%20ape",
+          "type": "search"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=a%20bathing%20ape",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/a%20bathing%20ape_d#/dept=men&d=972",
           "type": "brand"
         },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=universal%20works",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/universal%20works_d#/dept=men&d=24883",
-          "type": "brand"
-        },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=universal%20works",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=a%20bathing%20ape",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=universal%20works",
+          "url": "https://hbx.com/jp/search?q=a%20bathing%20ape",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/a%20bathing%20ape/",
           "type": "search"
         }
       },
       "shopPriority": [
         "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Vivobarefoot",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Accessories",
-        "Modern"
-      ],
-      "tier": "コア",
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=vivobarefoot",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=vivobarefoot",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=vivobarefoot",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=vivobarefoot",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=vivobarefoot",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "FARFETCH",
-        "SSENSE",
-        "YOOX",
-        "HBX"
-      ],
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Wax London",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/wax-london",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=wax%20london",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=wax%20london",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=wax%20london",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=wax%20london",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "YMC",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/ymc",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=ymc",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ymc",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=ymc",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=ymc",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "Song for the Mute",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
-      "categories": [
-        "Modern"
-      ],
-      "tier": "コア",
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=song%20for%20the%20mute",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=song%20for%20the%20mute",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=song%20for%20the%20mute",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=song%20for%20the%20mute",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=song%20for%20the%20mute",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "END",
-        "HBX"
-      ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
-    },
-    {
-      "name": "UP THERE",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "tier": "コア",
-      "favorite": 4,
-      "hidden": false,
-      "memo": "コラボ・別注目的",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=up%20there",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=up%20there",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=up%20there",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=up%20there",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=up%20there",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
         "HBX",
-        "YOOX"
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "A.P.C.",
+      "country": "フランス",
+      "countryGroup": "フランス",
+      "categories": [
+        "Clean"
       ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/a-p-c",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/apc",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=a.p.c.",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/designer-apc/items.aspx",
+          "type": "brand"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/apc",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/a.p.c./",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "YOOX",
+        "SSENSE",
+        "FARFETCH",
+        "END",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Acne Studios",
+      "country": "スウェーデン",
+      "countryGroup": "その他ヨーロッパ",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/acne-studios",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/acne-studios",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/acne%20studios_d#/dept=men&d=19295",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/acne-studios/items.aspx",
+          "type": "brand"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/acne-studios",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/acne%20studios/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "YOOX",
+        "SSENSE",
+        "FARFETCH",
+        "END",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "ADER Error",
+      "country": "韓国",
+      "countryGroup": "韓国",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=ader%20error",
+          "type": "search"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/ader-error",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/ader%20error_d#/dept=men&d=42905",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/ader-error/items.aspx",
+          "type": "brand"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/ader-error",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/ader%20error/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "END",
+        "YOOX",
+        "JDS"
+      ]
     },
     {
       "name": "adidas",
@@ -1339,6 +265,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/adidas-originals",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/adidas-originals/p/trainers",
+          "type": "brand"
         }
       },
       "shopPriority": [
@@ -1346,11 +276,9 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "GER",
-      "countryLabel": "GER"
+        "YOOX",
+        "JDS"
+      ]
     },
     {
       "name": "adidas SPZL",
@@ -1383,49 +311,9 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=adidas%20spzl",
           "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "HBX",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "GER",
-      "countryLabel": "GER"
-    },
-    {
-      "name": "Puma",
-      "country": "ドイツ",
-      "countryGroup": "ドイツ",
-      "categories": [
-        "Street",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/puma",
-          "type": "brand"
         },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/puma",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/puma_d#/dept=men&d=284",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=puma",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/puma",
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/adidas-originals/p/trainers",
           "type": "brand"
         }
       },
@@ -1434,42 +322,44 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "GER",
-      "countryLabel": "GER"
+        "YOOX",
+        "JDS"
+      ]
     },
     {
-      "name": "Maison Margiela",
+      "name": "AMI Paris",
       "country": "フランス",
       "countryGroup": "フランス",
       "categories": [
-        "Modern"
+        "Clean"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/maison-margiela",
+          "url": "https://www.endclothing.com/jp/brands/ami-paris",
           "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/maison-margiela",
+          "url": "https://www.ssense.com/ja-jp/men/designers/ami-alexandre-mattiussi",
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maison%20margiela_d#/dept=men&d=50",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=maison%20margiela",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ami%20paris",
           "type": "search"
         },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/maison-margiela",
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/designer-ami-paris/items.aspx",
           "type": "brand"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=ami%20paris",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/ami%20paris/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1477,55 +367,54 @@
         "SSENSE",
         "FARFETCH",
         "END",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "FRA",
-      "countryLabel": "FRA"
+        "HBX",
+        "JDS"
+      ]
     },
     {
-      "name": "Salomon",
-      "country": "フランス",
-      "countryGroup": "フランス",
+      "name": "Andersson Bell",
+      "country": "韓国",
+      "countryGroup": "韓国",
       "categories": [
-        "Street",
-        "Accessories"
+        "Street"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/salomon",
-          "type": "brand"
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=andersson%20bell",
+          "type": "search"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/salomon",
+          "url": "https://www.ssense.com/ja-jp/men/designers/andersson-bell",
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/salomon_d#/dept=men&d=15398",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/andersson%20bell_d#/dept=men&d=47517",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=salomon",
-          "type": "search"
+          "url": "https://www.farfetch.com/jp/shopping/men/designer-andersson-bell/items.aspx",
+          "type": "brand"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=salomon",
+          "url": "https://hbx.com/jp/search?q=andersson%20bell",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/andersson%20bell/",
           "type": "search"
         }
       },
       "shopPriority": [
-        "END",
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "FRA",
-      "countryLabel": "FRA"
+        "END",
+        "YOOX",
+        "JDS"
+      ]
     },
     {
       "name": "and wander",
@@ -1557,6 +446,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/and-wander",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/and%20wander/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1564,11 +457,54 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Aries",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
       ],
-      "tier": "コア",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/aries",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=aries",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/aries_d#/dept=men&d=23105",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/aries/items.aspx",
+          "type": "brand"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=aries",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/aries/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
     },
     {
       "name": "Asics",
@@ -1601,6 +537,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/asics",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/asics",
+          "type": "brand"
         }
       },
       "shopPriority": [
@@ -1608,18 +548,16 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
+        "YOOX",
+        "JDS"
+      ]
     },
     {
       "name": "Auralee",
       "country": "日本",
       "countryGroup": "日本",
       "categories": [
-        "Modern"
+        "Clean"
       ],
       "favorite": 3,
       "hidden": false,
@@ -1644,6 +582,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=auralee",
           "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/auralee/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1651,18 +593,61 @@
         "SSENSE",
         "YOOX",
         "FARFETCH",
-        "HBX"
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Barbour",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
       ],
-      "tier": "コア",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/barbour",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/barbour",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/barbour_d#/dept=men&d=2966",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=barbour",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=barbour",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/barbour/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
     },
     {
       "name": "Beams Plus",
       "country": "日本",
       "countryGroup": "日本",
       "categories": [
-        "Modern"
+        "Clean"
       ],
       "favorite": 3,
       "hidden": false,
@@ -1687,6 +672,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=beams%20plus",
           "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/beams%20plus/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -1694,444 +683,145 @@
         "SSENSE",
         "YOOX",
         "FARFETCH",
-        "HBX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
+        "HBX",
+        "JDS"
+      ]
     },
     {
-      "name": "Y-3",
-      "country": "日本",
-      "countryGroup": "日本",
+      "name": "Birkenstock",
+      "country": "ドイツ",
+      "countryGroup": "ドイツ",
       "categories": [
-        "Street"
+        "Clean",
+        "Accessories"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/y-3",
+          "url": "https://www.endclothing.com/jp/brands/birkenstock",
           "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/y-3",
+          "url": "https://www.ssense.com/ja-jp/men/designers/birkenstock",
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/y-3_d#/dept=men&d=2558",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/birkenstock_d#/dept=men&d=1671",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=y-3",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=birkenstock",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=y-3",
-          "type": "search"
+          "url": "https://hbx.com/jp/men/brands/birkenstock",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/birkenstock",
+          "type": "brand"
         }
       },
       "shopPriority": [
         "END",
-        "HBX",
         "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
-    },
-    {
-      "name": "ADER Error",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=ader%20error",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/ader-error",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/ader%20error_d#/dept=men&d=42905",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/ader-error/items.aspx",
-          "type": "brand"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/ader-error",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "Andersson Bell",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=andersson%20bell",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/andersson-bell",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/andersson%20bell_d#/dept=men&d=47517",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-andersson-bell/items.aspx",
-          "type": "brand"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=andersson%20bell",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "CAYL",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=cayl",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=cayl",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=cayl",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=cayl",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=cayl",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "Post Archive Faction (PAF)",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street",
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=post%20archive%20faction",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=post%20archive%20faction",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=post%20archive%20faction",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=post%20archive%20faction",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=post%20archive%20faction",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "SAN SAN GEAR",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=san%20san%20gear",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=san%20san%20gear",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=san%20san%20gear",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=san%20san%20gear",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=san%20san%20gear",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "thisisneverthat",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/thisisneverthat",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=thisisneverthat",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/thisisneverthat_d#/dept=men&d=49634",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=thisisneverthat",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/thisisneverthat",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "UNAFFECTED",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Modern",
-        "Street"
-      ],
-      "tier": "コア",
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=unaffected",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=unaffected",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=unaffected",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=unaffected",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=unaffected",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "XLIM",
-      "country": "韓国",
-      "countryGroup": "韓国",
-      "categories": [
-        "Street",
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=xlim",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=xlim",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=xlim",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=xlim",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=xlim",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "コア",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
-    },
-    {
-      "name": "Acne Studios",
-      "country": "スウェーデン",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/acne-studios",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/acne-studios",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/acne%20studios_d#/dept=men&d=19295",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/acne-studios/items.aspx",
-          "type": "brand"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/acne-studios",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
         "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Brain Dead",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/brain-dead",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=brain%20dead",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/brain%20dead_d#/dept=men&d=42475",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=brain%20dead",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/brain-dead",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/brain%20dead/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
         "SSENSE",
         "FARFETCH",
-        "END",
-        "HBX"
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Burberry",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
       ],
-      "tier": "候補",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "SWE"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/burberry",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/burberry",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/burberry_d#/dept=men&d=28997",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=burberry",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/burberry-1",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/burberry/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
     },
     {
       "name": "C.P. Company",
@@ -2163,6 +853,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/c-p-company",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/c.p.%20company/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2170,187 +864,12 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "ITA"
-    },
-    {
-      "name": "Norse Projects",
-      "country": "デンマーク",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/norse-projects",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/norse-projects",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/norse%20projects_d#/dept=men&d=16337",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=norse%20projects",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=norse%20projects",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
         "YOOX",
-        "FARFETCH",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "DEN"
+        "JDS"
+      ]
     },
     {
-      "name": "Our Legacy",
-      "country": "スウェーデン",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/our-legacy",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/our-legacy",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/our%20legacy_d#/dept=men&d=12038",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=our%20legacy",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/our-legacy",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "YOOX",
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "SWE"
-    },
-    {
-      "name": "ROA",
-      "country": "イタリア",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "高価格",
-      "tier": "候補",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=roa",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=roa",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=roa",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=roa",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=roa",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "SSENSE",
-        "FARFETCH",
-        "END",
-        "YOOX",
-        "HBX"
-      ],
-      "countryGroupLabel": "EUR",
-      "countryLabel": "ITA"
-    },
-    {
-      "name": "Stone Island",
-      "country": "イタリア",
-      "countryGroup": "その他ヨーロッパ",
-      "categories": [
-        "Street"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/stone-island",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/stone-island",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stone%20island_d#/dept=men&d=269",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=stone%20island",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/stone-island",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "HBX",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "EUR",
-      "countryLabel": "ITA"
-    },
-    {
-      "name": "Fear of God ESSENTIALS",
+      "name": "Carhartt WIP",
       "country": "アメリカ",
       "countryGroup": "アメリカ",
       "categories": [
@@ -2361,24 +880,28 @@
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/fear-of-god-essentials",
+          "url": "https://www.endclothing.com/jp/brands/carhartt",
           "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/essentials",
-          "type": "brand"
+          "url": "https://www.ssense.com/ja-jp/men?q=carhartt%20wip",
+          "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fear%20of%20god%20essentials_d#/dept=men&d=48461",
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/carhartt%20wip_d#/dept=men&d=50812",
           "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=fear%20of%20god%20essentials",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=carhartt%20wip",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/fear-of-god-essentials",
-          "type": "brand"
+          "url": "https://hbx.com/jp/search?q=carhartt%20wip",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/carhartt%20wip/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2386,105 +909,16 @@
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "YOOX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "G.H.Bass",
-      "country": "アメリカ",
-      "countryGroup": "アメリカ",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
         "YOOX",
-        "HBX"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=g.h.bass",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=g.h.bass",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=g.h.bass",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=g.h.bass",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=g.h.bass",
-          "type": "search"
-        }
-      },
-      "tier": "候補",
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
-    },
-    {
-      "name": "Burberry",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/burberry",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/burberry",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/burberry_d#/dept=men&d=28997",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=burberry",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/burberry-1",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
-        "YOOX",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
+        "JDS"
+      ]
     },
     {
       "name": "Clarks Originals",
       "country": "イギリス",
       "countryGroup": "イギリス",
       "categories": [
-        "Modern",
+        "Clean",
         "Accessories"
       ],
       "favorite": 3,
@@ -2510,6 +944,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=clarks%20originals",
           "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/kids/brand/clarks-originals",
+          "type": "brand"
         }
       },
       "shopPriority": [
@@ -2517,11 +955,280 @@
         "SSENSE",
         "FARFETCH",
         "YOOX",
-        "HBX"
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Cole Buxton",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
       ],
-      "tier": "候補",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/cole-buxton",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=cole%20buxton",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/cole%20buxton_d#/dept=men&d=55463",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=cole%20buxton",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=cole%20buxton",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/cole%20buxton/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Comme des Garcons Homme",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/comme-des-garcons-homme",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/comme-des-garcons-homme",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=comme%20des%20garcons%20homme",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=comme%20des%20garcons%20homme",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=comme%20des%20garcons%20homme",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/comme%20des%20garcons%20homme/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Comme des Garcons Play",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/comme-des-garcons-play",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=comme%20des%20garcons%20play",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=comme%20des%20garcons%20play",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=comme%20des%20garcons%20play",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=comme%20des%20garcons%20play",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/comme%20des%20garcons%20play/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Comme des Garcons Shirt",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=comme%20des%20garcons%20shirt",
+          "type": "search"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=comme%20des%20garcons%20shirt",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=comme%20des%20garcons%20shirt",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=comme%20des%20garcons%20shirt",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=comme%20des%20garcons%20shirt",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/comme%20des%20garcons%20shirt/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Dickies",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/dickies",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=dickies",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/dickies_d#/dept=men&d=1980",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=dickies",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/dickies",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/dickies",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Diemme",
+      "country": "イタリア",
+      "countryGroup": "その他ヨーロッパ",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/diemme",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/diemme",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/diemme_d#/dept=men&d=13148",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=diemme",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=diemme",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/diemme/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
     },
     {
       "name": "Dr. Martens",
@@ -2554,6 +1261,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=dr.%20martens",
           "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/dr.%20martens/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2561,18 +1272,151 @@
         "SSENSE",
         "FARFETCH",
         "YOOX",
-        "HBX"
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Fear of God ESSENTIALS",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
       ],
-      "tier": "候補",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/fear-of-god-essentials",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/essentials",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fear%20of%20god%20essentials_d#/dept=men&d=48461",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=fear%20of%20god%20essentials",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/fear-of-god-essentials",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/fear%20of%20god%20essentials/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Folk",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/folk",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=folk",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=folk",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=folk",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=folk",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/folk/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Fred Perry",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/fred-perry",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/fred-perry",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/fred%20perry_d#/dept=men&d=843",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=fred%20perry",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=fred%20perry",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/fred-perry",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
     },
     {
       "name": "Grenson",
       "country": "イギリス",
       "countryGroup": "イギリス",
       "categories": [
-        "Modern",
+        "Clean",
         "Accessories"
       ],
       "favorite": 3,
@@ -2598,6 +1442,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/search?q=grenson",
           "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/grenson/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2605,345 +1453,135 @@
         "SSENSE",
         "FARFETCH",
         "YOOX",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "John Smedley",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Modern"
-      ],
-      "shopPriority": [
-        "END",
-        "FARFETCH",
-        "YOOX",
-        "SSENSE",
-        "HBX"
-      ],
-      "favorite": 4,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=john%20smedley",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=john%20smedley",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=john%20smedley",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=john%20smedley",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=john%20smedley",
-          "type": "search"
-        }
-      },
-      "tier": "候補",
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
-    },
-    {
-      "name": "PALACE",
-      "country": "イギリス",
-      "countryGroup": "イギリス",
-      "categories": [
-        "Street"
-      ],
-      "tier": "候補",
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=palace",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=palace",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=palace",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=palace",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=palace",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "FARFETCH",
         "HBX",
-        "YOOX"
-      ],
-      "countryGroupLabel": "UK",
-      "countryLabel": "UK"
+        "JDS"
+      ]
     },
     {
-      "name": "Assembly Label",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
+      "name": "Human Made",
+      "country": "日本",
+      "countryGroup": "日本",
       "categories": [
-        "Modern"
+        "Street",
+        "Clean"
       ],
-      "tier": "候補",
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=assembly%20label",
-          "type": "search"
+          "url": "https://www.endclothing.com/jp/brands/human-made",
+          "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=assembly%20label",
+          "url": "https://www.ssense.com/ja-jp/men?q=human%20made",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=assembly%20label",
-          "type": "search"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/human%20made_d#/dept=men&d=23119",
+          "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=assembly%20label",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=human%20made",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=assembly%20label",
+          "url": "https://hbx.com/jp/men/brands/human-made",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/human%20made/",
           "type": "search"
         }
       },
       "shopPriority": [
-        "YOOX",
-        "FARFETCH",
-        "SSENSE",
         "END",
-        "HBX"
-      ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
-    },
-    {
-      "name": "Bassike",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
-      "categories": [
-        "Modern"
-      ],
-      "tier": "候補",
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=bassike",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=bassike",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=bassike",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=bassike",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=bassike",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
-        "YOOX",
-        "FARFETCH",
+        "HBX",
         "SSENSE",
-        "END",
-        "HBX"
-      ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
-    },
-    {
-      "name": "Kloke",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
-      "categories": [
-        "Modern"
-      ],
-      "tier": "候補",
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=kloke",
-          "type": "search"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=kloke",
-          "type": "search"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=kloke",
-          "type": "search"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=kloke",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/search?q=kloke",
-          "type": "search"
-        }
-      },
-      "shopPriority": [
         "FARFETCH",
         "YOOX",
-        "SSENSE",
-        "END",
-        "HBX"
-      ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
+        "JDS"
+      ]
     },
     {
-      "name": "Ten Pieces",
-      "country": "オーストラリア",
-      "countryGroup": "オーストラリア",
+      "name": "Levi's",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
       "categories": [
-        "Modern",
         "Street"
       ],
-      "tier": "候補",
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=ten%20pieces",
-          "type": "search"
+          "url": "https://www.endclothing.com/jp/brands/levi-s",
+          "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=ten%20pieces",
+          "url": "https://www.ssense.com/ja-jp/men?q=levi%27s",
           "type": "search"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ten%20pieces",
-          "type": "search"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/levi's_d#/dept=men&d=534",
+          "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=ten%20pieces",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=levi%27s",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=ten%20pieces",
+          "url": "https://hbx.com/jp/search?q=levi%27s",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/levi%27s/",
           "type": "search"
         }
       },
       "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
         "FARFETCH",
         "YOOX",
-        "SSENSE",
-        "END",
-        "HBX"
-      ],
-      "countryGroupLabel": "AUS",
-      "countryLabel": "AUS"
+        "JDS"
+      ]
     },
     {
-      "name": "Birkenstock",
-      "country": "ドイツ",
-      "countryGroup": "ドイツ",
-      "categories": [
-        "Modern",
-        "Accessories"
-      ],
-      "favorite": 3,
-      "hidden": false,
-      "memo": "",
-      "shops": {
-        "END": {
-          "url": "https://www.endclothing.com/jp/brands/birkenstock",
-          "type": "brand"
-        },
-        "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/birkenstock",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/birkenstock_d#/dept=men&d=1671",
-          "type": "brand"
-        },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=birkenstock",
-          "type": "search"
-        },
-        "HBX": {
-          "url": "https://hbx.com/jp/men/brands/birkenstock",
-          "type": "brand"
-        }
-      },
-      "shopPriority": [
-        "END",
-        "SSENSE",
-        "YOOX",
-        "FARFETCH",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "GER",
-      "countryLabel": "GER"
-    },
-    {
-      "name": "A.P.C.",
+      "name": "Maison Margiela",
       "country": "フランス",
       "countryGroup": "フランス",
       "categories": [
-        "Modern"
+        "Clean"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/a-p-c",
+          "url": "https://www.endclothing.com/jp/brands/maison-margiela",
           "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/apc",
+          "url": "https://www.ssense.com/ja-jp/men/designers/maison-margiela",
           "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=a.p.c.",
-          "type": "search"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maison%20margiela_d#/dept=men&d=50",
+          "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-apc/items.aspx",
-          "type": "brand"
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=maison%20margiela",
+          "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/men/brands/apc",
+          "url": "https://hbx.com/jp/men/brands/maison-margiela",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/maison%20margiela/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -2951,61 +1589,61 @@
         "SSENSE",
         "FARFETCH",
         "END",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "FRA",
-      "countryLabel": "FRA"
+        "HBX",
+        "JDS"
+      ]
     },
     {
-      "name": "AMI Paris",
-      "country": "フランス",
-      "countryGroup": "フランス",
+      "name": "Maharishi",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
       "categories": [
-        "Modern"
+        "Street"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/brands/ami-paris",
+          "url": "https://www.endclothing.com/jp/brands/maharishi",
           "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men/designers/ami-alexandre-mattiussi",
-          "type": "brand"
-        },
-        "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ami%20paris",
+          "url": "https://www.ssense.com/ja-jp/men?q=maharishi",
           "type": "search"
         },
-        "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/designer-ami-paris/items.aspx",
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/maharishi_d#/dept=men&d=134",
           "type": "brand"
         },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=maharishi",
+          "type": "search"
+        },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=ami%20paris",
+          "url": "https://hbx.com/jp/men/brands/maharishi",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/maharishi/",
           "type": "search"
         }
       },
       "shopPriority": [
-        "YOOX",
+        "END",
         "SSENSE",
         "FARFETCH",
-        "END",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "FRA",
-      "countryLabel": "FRA"
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
     },
     {
       "name": "nanamica",
       "country": "日本",
       "countryGroup": "日本",
       "categories": [
-        "Modern"
+        "Clean"
       ],
       "favorite": 3,
       "hidden": false,
@@ -3030,6 +1668,10 @@
         "HBX": {
           "url": "https://hbx.com/jp/men/brands/nanamica",
           "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/nanamica/",
+          "type": "search"
         }
       },
       "shopPriority": [
@@ -3037,182 +1679,1187 @@
         "SSENSE",
         "YOOX",
         "FARFETCH",
-        "HBX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "JPN",
-      "countryLabel": "JPN"
+        "HBX",
+        "JDS"
+      ]
     },
     {
-      "name": "Hyein Seo",
-      "country": "韓国",
-      "countryGroup": "韓国",
+      "name": "Neighborhood",
+      "country": "日本",
+      "countryGroup": "日本",
       "categories": [
-        "Street",
-        "Modern"
+        "Street"
       ],
       "favorite": 3,
       "hidden": false,
       "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=hyein%20seo",
-          "type": "search"
+          "url": "https://www.endclothing.com/jp/brands/neighborhood",
+          "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=hyein%20seo",
-          "type": "search"
+          "url": "https://www.ssense.com/ja-jp/men/designers/neighborhood",
+          "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=hyein%20seo",
-          "type": "search"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/neighborhood_d#/dept=men&d=4687",
+          "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=hyein%20seo",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=neighborhood",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=hyein%20seo",
+          "url": "https://hbx.com/jp/men/brands/neighborhood",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/neighborhood/",
           "type": "search"
         }
       },
       "shopPriority": [
+        "END",
         "HBX",
         "SSENSE",
         "FARFETCH",
-        "END",
-        "YOOX"
-      ],
-      "tier": "候補",
-      "countryGroupLabel": "KOR",
-      "countryLabel": "KOR"
+        "YOOX",
+        "JDS"
+      ]
     },
     {
-      "name": "Converse CONS",
+      "name": "Needles",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/needles",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/needles",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/needles_d#/dept=men&d=45776",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=needles",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/needles",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/needles/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "New Balance",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Clean",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/new-balance",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=new%20balance",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/new%20balance_d#/dept=men&d=1539",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=new%20balance",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/new-balance",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/new-balance/p/trainers",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Nike",
       "country": "アメリカ",
       "countryGroup": "アメリカ",
       "categories": [
         "Street",
         "Accessories"
       ],
-      "tier": "候補",
       "favorite": 3,
       "hidden": false,
-      "memo": "Converseのスケートライン",
+      "memo": "",
       "shops": {
         "END": {
-          "url": "https://www.endclothing.com/jp/catalogsearch/results?q=converse%20cons",
-          "type": "search"
+          "url": "https://www.endclothing.com/jp/brands/nike",
+          "type": "brand"
         },
         "SSENSE": {
-          "url": "https://www.ssense.com/ja-jp/men?q=converse%20cons",
-          "type": "search"
+          "url": "https://www.ssense.com/ja-jp/men/designers/nike",
+          "type": "brand"
         },
         "YOOX": {
-          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=converse%20cons",
-          "type": "search"
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/nike_d#/dept=men&d=682",
+          "type": "brand"
         },
         "FARFETCH": {
-          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=converse%20cons",
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=nike",
           "type": "search"
         },
         "HBX": {
-          "url": "https://hbx.com/jp/search?q=converse%20cons",
+          "url": "https://hbx.com/jp/men/brands/nike",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/nike/p/trainers",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Norse Projects",
+      "country": "デンマーク",
+      "countryGroup": "その他ヨーロッパ",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/norse-projects",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/norse-projects",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/norse%20projects_d#/dept=men&d=16337",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=norse%20projects",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=norse%20projects",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/norse%20projects/",
           "type": "search"
         }
       },
       "shopPriority": [
         "END",
         "SSENSE",
-        "HBX",
+        "YOOX",
         "FARFETCH",
-        "YOOX"
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Oakley",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street",
+        "Accessories"
       ],
-      "countryGroupLabel": "USA",
-      "countryLabel": "USA"
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/oakley",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/oakley",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/oakley_d#/dept=men&d=11218",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=oakley",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/oakley",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/oakley/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Our Legacy",
+      "country": "スウェーデン",
+      "countryGroup": "その他ヨーロッパ",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/our-legacy",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/our-legacy",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/our%20legacy_d#/dept=men&d=12038",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=our%20legacy",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/our-legacy",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/our%20legacy/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "YOOX",
+        "SSENSE",
+        "FARFETCH",
+        "END",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Paul Smith",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/paul-smith",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/paul-smith",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/paul%20smith_d#/dept=men&d=60",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=paul%20smith",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=paul%20smith",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/paul%20smith/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "PLEASURES",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/pleasures",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=pleasures",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/pleasures_d#/dept=men&d=43503",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=pleasures",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/pleasures",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/pleasures/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Polo Ralph Lauren",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/polo-ralph-lauren",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/polo-ralph-lauren",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/polo%20ralph%20lauren_d#/dept=men&d=165",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=polo%20ralph%20lauren",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=polo%20ralph%20lauren",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/polo-ralph-lauren",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Porter-Yoshida & Co.",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Clean",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/porter",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=porter-yoshida%20%26%20co.",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=porter-yoshida%20%26%20co.",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=porter-yoshida%20%26%20co.",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=porter-yoshida%20%26%20co.",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/porter-yoshida%20%26%20co./",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "YOOX",
+        "FARFETCH",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Puma",
+      "country": "ドイツ",
+      "countryGroup": "ドイツ",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/puma",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/puma",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/puma_d#/dept=men&d=284",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=puma",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/puma",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/puma/p/trainers",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Red Wing",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/red-wing",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=red%20wing",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=red%20wing",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=red%20wing",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=red%20wing",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/red%20wing/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Represent",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/represent",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/represent",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/represent_d#/dept=men&d=34237",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=represent",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=represent",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/represent/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Represent 247",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/represent-247",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=represent%20247",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=represent%20247",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=represent%20247",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=represent%20247",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/represent%20247/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Salomon",
+      "country": "フランス",
+      "countryGroup": "フランス",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/salomon",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/salomon",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/salomon_d#/dept=men&d=15398",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=salomon",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=salomon",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/men/brand/salomon",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Stone Island",
+      "country": "イタリア",
+      "countryGroup": "その他ヨーロッパ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/stone-island",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/stone-island",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stone%20island_d#/dept=men&d=269",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=stone%20island",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/stone-island",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/stone%20island/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Stussy",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/stussy",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=stussy",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/stussy_d#/dept=men&d=1684",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=stussy",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=stussy",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/stussy/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "The North Face",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/the-north-face",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=the%20north%20face",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/the%20north%20face_d#/dept=men&d=4633",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=the%20north%20face",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=the%20north%20face",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/the-north-face/c/accessories",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "thisisneverthat",
+      "country": "韓国",
+      "countryGroup": "韓国",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/thisisneverthat",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=thisisneverthat",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/thisisneverthat_d#/dept=men&d=49634",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=thisisneverthat",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/thisisneverthat",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/thisisneverthat/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "END",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Universal Works",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/universal-works",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=universal%20works",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/universal%20works_d#/dept=men&d=24883",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=universal%20works",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=universal%20works",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/universal%20works/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Vans",
+      "country": "アメリカ",
+      "countryGroup": "アメリカ",
+      "categories": [
+        "Street",
+        "Accessories"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/vans",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/vans",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/vans_d#/dept=men&d=684",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=vans",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/vans",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/brand/vans/p/trainers",
+          "type": "brand"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Wax London",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/wax-london",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=wax%20london",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=wax%20london",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=wax%20london",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=wax%20london",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/wax%20london/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "WTAPS",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/wtaps",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/wtaps",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=wtaps",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=wtaps",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/men/brands/wtaps",
+          "type": "brand"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/wtaps/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "YMC",
+      "country": "イギリス",
+      "countryGroup": "イギリス",
+      "categories": [
+        "Clean"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/ymc",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men?q=ymc",
+          "type": "search"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline?textsearch=ymc",
+          "type": "search"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=ymc",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=ymc",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/ymc/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "HBX",
+        "JDS"
+      ]
+    },
+    {
+      "name": "Y-3",
+      "country": "日本",
+      "countryGroup": "日本",
+      "categories": [
+        "Street"
+      ],
+      "favorite": 3,
+      "hidden": false,
+      "memo": "",
+      "shops": {
+        "END": {
+          "url": "https://www.endclothing.com/jp/brands/y-3",
+          "type": "brand"
+        },
+        "SSENSE": {
+          "url": "https://www.ssense.com/ja-jp/men/designers/y-3",
+          "type": "brand"
+        },
+        "YOOX": {
+          "url": "https://www.yoox.com/jp/%E3%83%A1%E3%83%B3%E3%82%BA/shoponline/y-3_d#/dept=men&d=2558",
+          "type": "brand"
+        },
+        "FARFETCH": {
+          "url": "https://www.farfetch.com/jp/shopping/men/search/items.aspx?q=y-3",
+          "type": "search"
+        },
+        "HBX": {
+          "url": "https://hbx.com/jp/search?q=y-3",
+          "type": "search"
+        },
+        "JDS": {
+          "url": "https://www.global.jdsports.com/search/y-3/",
+          "type": "search"
+        }
+      },
+      "shopPriority": [
+        "END",
+        "HBX",
+        "SSENSE",
+        "FARFETCH",
+        "YOOX",
+        "JDS"
+      ]
     }
-  ],
-  "removedAtV2": [
-    "A Bathing Ape",
-    "Comme des Garcons Homme",
-    "Comme des Garcons Play",
-    "Comme des Garcons Shirt",
-    "Human Made",
-    "Needles",
-    "Neighborhood",
-    "Porter-Yoshida & Co.",
-    "WTAPS"
-  ],
-  "removedAtV3": [
-    "Brain Dead",
-    "Paul Smith",
-    "Red Wing"
-  ],
-  "fix": "Autry added with proper display casing",
-  "permanentDeleted": [
-    "A Bathing Ape",
-    "Brain Dead",
-    "Comme des Garcons Homme",
-    "Comme des Garcons Play",
-    "Comme des Garcons Shirt",
-    "Diemme",
-    "Human Made",
-    "Merrell 1TRL",
-    "Needles",
-    "Neighborhood",
-    "P.A.M.",
-    "P.A.M. (Perks and Mini)",
-    "PLEASURES",
-    "Paul Smith",
-    "Perks and Mini",
-    "Porter-Yoshida & Co.",
-    "Red Wing",
-    "Sunspel",
-    "WTAPS"
-  ],
-  "candidateBrands": [
-    "A.P.C.",
-    "AMI Paris",
-    "Acne Studios",
-    "Birkenstock",
-    "Burberry",
-    "C.P. Company",
-    "Clarks Originals",
-    "Dr. Martens",
-    "Fear of God ESSENTIALS",
-    "G.H.Bass",
-    "Grenson",
-    "Hyein Seo",
-    "John Smedley",
-    "Norse Projects",
-    "Our Legacy",
-    "Stone Island",
-    "nanamica"
-  ],
-  "deletedAtV4_1": [
-    "Merrell 1TRL",
-    "P.A.M.",
-    "P.A.M. (Perks and Mini)",
-    "Perks and Mini"
-  ],
-  "countryOrder": [
-    "イギリス",
-    "アメリカ",
-    "フランス",
-    "ドイツ",
-    "その他ヨーロッパ",
-    "韓国",
-    "オーストラリア",
-    "日本"
-  ],
-  "countryLabels": {
-    "イギリス": "UK",
-    "アメリカ": "USA",
-    "フランス": "FRA",
-    "ドイツ": "GER",
-    "その他ヨーロッパ": "EUR",
-    "韓国": "KOR",
-    "オーストラリア": "AUS",
-    "日本": "JPN"
-  }
+  ]
 }

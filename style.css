@@ -514,3 +514,26 @@ footer {
     grid-template-columns: 78px 1fr;
   }
 }
+
+
+/* v9.1 shop abbreviations / six-shop compact buttons */
+.searchLink,
+.shopLink {
+  min-width: 54px;
+  text-align: center;
+}
+
+.compareLinks,
+.rowButtons,
+.brandShops {
+  flex-wrap: wrap;
+}
+
+@media (max-width:560px) {
+  .searchLink,
+  .shopLink {
+    min-width: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
